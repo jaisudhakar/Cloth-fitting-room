@@ -5,7 +5,7 @@ import { getDictionary, hasLocale } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/shop">): Promise<Metadata> {
   const { lang } = await params;
-  return hasLocale(lang) ? { title: getDictionary(lang).shop.title } : {};
+  return hasLocale(lang) ? { title: getDictionary(lang).nav.shop } : {};
 }
 
 export default function ShopPage() {

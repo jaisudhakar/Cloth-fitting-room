@@ -44,3 +44,6 @@ next-env.d.ts
 /public/mediapipe/
 
 !.env.example
+
+# Template imagery, downloaded by scripts/fetch-assets.mjs
+/public/assets/

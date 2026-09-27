@@ -1,0 +1,3703 @@
+{
+ "categories": [
+  {
+   "id": 1,
+   "slug": "t-shirts",
+   "name": {
+    "en": "T-Shirts",
+    "ar": "تي شيرت"
+   },
+   "description": {
+    "en": "Everyday tees in soft cotton — from clean classics to oversized statements.",
+    "ar": "تي شيرت للاستخدام اليومي من القطن الناعم — من الكلاسيكيات النظيفة إلى القصات الفضفاضة."
+   },
+   "image": "/assets/categories/cca1507c-0288-490f-b060-8df4e32709bc.png"
+  },
+  {
+   "id": 2,
+   "slug": "hoodies-sweatshirts",
+   "name": {
+    "en": "Hoodies & Sweatshirts",
+    "ar": "هوديز وسويتشرت"
+   },
+   "description": {
+    "en": "Heavyweight fleece, zip-ups and pullovers for layering year-round.",
+    "ar": "فلِيس ثقيل وسحّابات وبلوزات للتنسيق على مدار العام."
+   },
+   "image": "/assets/categories/033e0d63-9ab6-467d-a824-93d8f8e174a6.png"
+  },
+  {
+   "id": 3,
+   "slug": "jackets-outerwear",
+   "name": {
+    "en": "Jackets & Outerwear",
+    "ar": "جاكيتات وملابس خارجية"
+   },
+   "description": {
+    "en": "Leather, denim, wool — outerwear pieces built to layer over anything.",
+    "ar": "جلد ودنيم وصوف — قطع خارجية مصممة للتنسيق فوق أي إطلالة."
+   },
+   "image": "/assets/categories/3ade79ce-01f9-43a6-a264-0c28e051aa3c.png"
+  },
+  {
+   "id": 4,
+   "slug": "pants-trousers",
+   "name": {
+    "en": "Pants & Trousers",
+    "ar": "بناطيل"
+   },
+   "description": {
+    "en": "Denim, chinos, cargos, joggers and tailored wool — the full bottom line-up.",
+    "ar": "دنيم وشينو وكارجو وجوغرز وصوف مفصّل — تشكيلة بناطيل شاملة."
+   },
+   "image": "/assets/categories/0af24c81-e55a-4206-b86c-87faac403008.png"
+  },
+  {
+   "id": 5,
+   "slug": "shirts",
+   "name": {
+    "en": "Shirts",
+    "ar": "قمصان"
+   },
+   "description": {
+    "en": "Oxfords, flannels, linen and henleys — woven shirts for every dress code.",
+    "ar": "أوكسفورد وفلانيل وكتان وهنلي — قمصان منسوجة لكل مناسبة."
+   },
+   "image": "/assets/categories/377dc124-5790-40ee-93f6-e012c27935b3.png"
+  },
+  {
+   "id": 6,
+   "slug": "shoes-sneakers",
+   "name": {
+    "en": "Shoes & Sneakers",
+    "ar": "أحذية"
+   },
+   "description": {
+    "en": "Low-tops, high-tops, leather boots and runners — kicks for every outfit.",
+    "ar": "أحذية منخفضة وعالية وبوت جلد وأحذية رياضية — لكل إطلالة."
+   },
+   "image": "/assets/categories/ddfe917f-1e42-4c57-a9bd-a5a0fbf955a1.png"
+  },
+  {
+   "id": 7,
+   "slug": "hats",
+   "name": {
+    "en": "Hats",
+    "ar": "قبعات"
+   },
+   "description": {
+    "en": "Caps, beanies and brims in colours worth wearing.",
+    "ar": "كابات وبيني وقبعات بألوان تستحق الارتداء."
+   },
+   "image": "/assets/categories/cae04b0d-8841-4e9c-8a19-da0fecdd46b4.png"
+  }
+ ],
+ "products": [
+  {
+   "id": 35,
+   "slug": "teal-five-panel-cap",
+   "sku": "HAT-005",
+   "name": {
+    "en": "Teal Five-Panel Cap",
+    "ar": "كاب بخمس قطع بلون تركوازي"
+   },
+   "description": {
+    "en": "Low-profile five-panel cap in deep teal cotton, with a flat brim and a woven adjuster strap.",
+    "ar": "كاب منخفض بخمس قطع من القطن التركوازي الغامق، بحافة مسطحة وحزام قابل للتعديل."
+   },
+   "longDescription": {
+    "en": "<p>Low-profile five-panel cap in deep teal cotton, with a flat brim and a woven adjuster strap.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hats</li><li>Reference: HAT-005</li><li>Approximate weight: 0.11 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>كاب منخفض بخمس قطع من القطن التركوازي الغامق، بحافة مسطحة وحزام قابل للتعديل.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قبعات</li><li>الرقم المرجعي: HAT-005</li><li>الوزن التقريبي: 0.11 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 37,
+   "compareAtPrice": null,
+   "categoryId": 7,
+   "stock": 130,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hat",
+    "cap",
+    "five-panel",
+    "teal"
+   ],
+   "rating": 4,
+   "reviewCount": 9,
+   "createdAt": "2026-08-28T13:04:01.000Z",
+   "image": "/assets/products/874e5f5b-2cad-45d1-bd3e-bb8a97e88bff.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 5
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 15
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 5
+    },
+    {
+     "value": "Teal",
+     "label": {
+      "en": "Teal",
+      "ar": "تركوازي"
+     },
+     "hex": "#1f5f66",
+     "stock": 11
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "One Size",
+     "stock": 12
+    }
+   ],
+   "bbox": [
+    0.0869,
+    0.2559,
+    0.8174,
+    0.498
+   ]
+  },
+  {
+   "id": 34,
+   "slug": "camel-wool-flat-cap",
+   "sku": "HAT-004",
+   "name": {
+    "en": "Camel Wool Flat Cap",
+    "ar": "كاب مسطح من الصوف بلون جملي"
+   },
+   "description": {
+    "en": "Herringbone wool flat cap in camel, cut in a classic newsboy shape with a stitched-down brim.",
+    "ar": "كاب مسطح من صوف الهيرنغبون بلون جملي، بقصة كلاسيكية وحافة مخيطة."
+   },
+   "longDescription": {
+    "en": "<p>Herringbone wool flat cap in camel, cut in a classic newsboy shape with a stitched-down brim.</p><h3>Benefits</h3><ul><li>Fine wool blend that holds its shape and insulates without bulk.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hats</li><li>Reference: HAT-004</li><li>Approximate weight: 0.13 kg</li><li>Primary materials: wool</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Dry clean only.</li><li>Steam rather than iron to release creases.</li><li>Store on a wide hanger to hold the shoulder line.</li></ul>",
+    "ar": "<p>كاب مسطح من صوف الهيرنغبون بلون جملي، بقصة كلاسيكية وحافة مخيطة.</p><h3>المميزات</h3><ul><li>خليط صوف ناعم يحافظ على قوامه ويمنح الدفء دون ثِقَل.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قبعات</li><li>الرقم المرجعي: HAT-004</li><li>الوزن التقريبي: 0.13 كجم</li><li>الخامات الأساسية: wool</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>التنظيف الجاف فقط.</li><li>يُستخدم البخار بدل المكواة لإزالة التجاعيد.</li><li>يُعلق على شماعة عريضة للحفاظ على خط الكتف.</li></ul>"
+   },
+   "price": 45,
+   "compareAtPrice": 55,
+   "categoryId": 7,
+   "stock": 95,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hat",
+    "flat-cap",
+    "wool",
+    "camel"
+   ],
+   "rating": 3.8,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:04:00.000Z",
+   "image": "/assets/products/23346360-9445-4c38-b08a-2a4909bc33b5.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 33
+    },
+    {
+     "value": "Camel",
+     "label": {
+      "en": "Camel",
+      "ar": "جملي"
+     },
+     "hex": "#b08956",
+     "stock": 9
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 9
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 36
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "One Size",
+     "stock": 7
+    }
+   ],
+   "bbox": [
+    0.1426,
+    0.2891,
+    0.7178,
+    0.4346
+   ]
+  },
+  {
+   "id": 33,
+   "slug": "mustard-bucket-hat",
+   "sku": "HAT-003",
+   "name": {
+    "en": "Mustard Bucket Hat",
+    "ar": "قبعة باكيت بلون خردلي"
+   },
+   "description": {
+    "en": "Cotton-twill bucket hat in mustard, with a sloping brim and side eyelets.",
+    "ar": "قبعة باكيت من قطن التويل بلون خردلي، بحافة مائلة وفتحات تهوية جانبية."
+   },
+   "longDescription": {
+    "en": "<p>Cotton-twill bucket hat in mustard, with a sloping brim and side eyelets.</p><h3>Benefits</h3><ul><li>Breathable 100% cotton that stays soft wash after wash.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hats</li><li>Reference: HAT-003</li><li>Approximate weight: 0.11 kg</li><li>Primary materials: cotton</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قبعة باكيت من قطن التويل بلون خردلي، بحافة مائلة وفتحات تهوية جانبية.</p><h3>المميزات</h3><ul><li>قطن 100% يسمح بمرور الهواء ويبقى ناعماً بعد كل غسلة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قبعات</li><li>الرقم المرجعي: HAT-003</li><li>الوزن التقريبي: 0.11 كجم</li><li>الخامات الأساسية: cotton</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 35,
+   "compareAtPrice": null,
+   "categoryId": 7,
+   "stock": 120,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "hat",
+    "bucket",
+    "cotton",
+    "mustard"
+   ],
+   "rating": 4.21,
+   "reviewCount": 14,
+   "createdAt": "2026-08-28T13:03:57.000Z",
+   "image": "/assets/products/6afee1df-a02d-4c89-9540-9c27bb41d936.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 15
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 15
+    },
+    {
+     "value": "Mustard",
+     "label": {
+      "en": "Mustard",
+      "ar": "خردلي"
+     },
+     "hex": "#c8952b",
+     "stock": 11
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 17
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "One Size",
+     "stock": 4
+    }
+   ],
+   "bbox": [
+    0.0996,
+    0.2197,
+    0.8008,
+    0.5703
+   ]
+  },
+  {
+   "id": 32,
+   "slug": "forest-green-ribbed-beanie",
+   "sku": "HAT-002",
+   "name": {
+    "en": "Forest Green Ribbed Beanie",
+    "ar": "بيني مضلع أخضر غامق"
+   },
+   "description": {
+    "en": "Chunky ribbed knit beanie in forest green wool, with a folded cuff.",
+    "ar": "بيني من الصوف المضلع السميك بلون أخضر غامق، بحافة مطوية."
+   },
+   "longDescription": {
+    "en": "<p>Chunky ribbed knit beanie in forest green wool, with a folded cuff.</p><h3>Benefits</h3><ul><li>Fine wool blend that holds its shape and insulates without bulk.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hats</li><li>Reference: HAT-002</li><li>Approximate weight: 0.1 kg</li><li>Primary materials: wool</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Dry clean only.</li><li>Steam rather than iron to release creases.</li><li>Store on a wide hanger to hold the shoulder line.</li></ul>",
+    "ar": "<p>بيني من الصوف المضلع السميك بلون أخضر غامق، بحافة مطوية.</p><h3>المميزات</h3><ul><li>خليط صوف ناعم يحافظ على قوامه ويمنح الدفء دون ثِقَل.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قبعات</li><li>الرقم المرجعي: HAT-002</li><li>الوزن التقريبي: 0.1 كجم</li><li>الخامات الأساسية: wool</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>التنظيف الجاف فقط.</li><li>يُستخدم البخار بدل المكواة لإزالة التجاعيد.</li><li>يُعلق على شماعة عريضة للحفاظ على خط الكتف.</li></ul>"
+   },
+   "price": 32,
+   "compareAtPrice": null,
+   "categoryId": 7,
+   "stock": 180,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hat",
+    "beanie",
+    "wool",
+    "green"
+   ],
+   "rating": 4,
+   "reviewCount": 14,
+   "createdAt": "2026-08-28T13:03:56.000Z",
+   "image": "/assets/products/6c0b9e41-67e6-4db8-866c-2264b3fbe307.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 32
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 22
+    },
+    {
+     "value": "Forest Green",
+     "label": {
+      "en": "Forest Green",
+      "ar": "أخضر"
+     },
+     "hex": "#2f5d43",
+     "stock": 10
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 33
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "One Size",
+     "stock": 3
+    }
+   ],
+   "bbox": [
+    0.1387,
+    0.1641,
+    0.7178,
+    0.6865
+   ]
+  },
+  {
+   "id": 31,
+   "slug": "rust-corduroy-baseball-cap",
+   "sku": "HAT-001",
+   "name": {
+    "en": "Rust Corduroy Baseball Cap",
+    "ar": "كاب كوردروي بلون صدئ"
+   },
+   "description": {
+    "en": "Structured six-panel cap in rust corduroy, with a curved brim and a brass adjuster at the back.",
+    "ar": "كاب بستة قطع من الكوردروي بلون صدئ، بحافة منحنية ومشبك نحاسي من الخلف."
+   },
+   "longDescription": {
+    "en": "<p>Structured six-panel cap in rust corduroy, with a curved brim and a brass adjuster at the back.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hats</li><li>Reference: HAT-001</li><li>Approximate weight: 0.12 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>كاب بستة قطع من الكوردروي بلون صدئ، بحافة منحنية ومشبك نحاسي من الخلف.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قبعات</li><li>الرقم المرجعي: HAT-001</li><li>الوزن التقريبي: 0.12 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 39,
+   "compareAtPrice": 49,
+   "categoryId": 7,
+   "stock": 150,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hat",
+    "cap",
+    "corduroy",
+    "rust"
+   ],
+   "rating": 4.13,
+   "reviewCount": 8,
+   "createdAt": "2026-08-28T13:03:54.000Z",
+   "image": "/assets/products/2869599a-3149-48ba-b3be-06eba98f867a.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 33
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 5
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 29
+    },
+    {
+     "value": "Rust",
+     "label": {
+      "en": "Rust",
+      "ar": "صدئ"
+     },
+     "hex": "#a4522c",
+     "stock": 24
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "One Size",
+     "stock": 4
+    }
+   ],
+   "bbox": [
+    0.1104,
+    0.2305,
+    0.7715,
+    0.5586
+   ]
+  },
+  {
+   "id": 30,
+   "slug": "grey-performance-runners",
+   "sku": "SHO-005",
+   "name": {
+    "en": "Grey Performance Runners",
+    "ar": "حذاء رياضي رمادي"
+   },
+   "description": {
+    "en": "Lightweight performance runners with chunky white midsole and breathable mesh upper.",
+    "ar": "حذاء رياضي خفيف مع نعل وسطي عريض أبيض ووجه شبكي يسمح بالتهوية."
+   },
+   "longDescription": {
+    "en": "<p>Lightweight performance runners with chunky white midsole and breathable mesh upper.</p><h3>Benefits</h3><ul><li>Cushioned midsole tuned for long, repetitive miles.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shoes & Sneakers</li><li>Reference: SHO-005</li><li>Approximate weight: 0.8 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>حذاء رياضي خفيف مع نعل وسطي عريض أبيض ووجه شبكي يسمح بالتهوية.</p><h3>المميزات</h3><ul><li>نعل أوسط مبطّن مصمم للمسافات الطويلة والمتكررة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: أحذية</li><li>الرقم المرجعي: SHO-005</li><li>الوزن التقريبي: 0.8 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 149,
+   "compareAtPrice": null,
+   "categoryId": 6,
+   "stock": 70,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "shoes",
+    "running",
+    "grey",
+    "athletic"
+   ],
+   "rating": 4.2,
+   "reviewCount": 10,
+   "createdAt": "2026-08-28T13:03:53.000Z",
+   "image": "/assets/products/ca37ccf5-8ba5-4d08-a305-5f37533b3876.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 10
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 28
+    },
+    {
+     "value": "Heather Grey",
+     "label": {
+      "en": "Heather Grey",
+      "ar": "رمادي"
+     },
+     "hex": "#9aa0a6",
+     "stock": 22
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 20
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Shoe Size",
+     "value": "40",
+     "stock": 10
+    },
+    {
+     "type": "Shoe Size",
+     "value": "41",
+     "stock": 6
+    },
+    {
+     "type": "Shoe Size",
+     "value": "42",
+     "stock": 17
+    },
+    {
+     "type": "Shoe Size",
+     "value": "43",
+     "stock": 15
+    },
+    {
+     "type": "Shoe Size",
+     "value": "44",
+     "stock": 12
+    },
+    {
+     "type": "Shoe Size",
+     "value": "45",
+     "stock": 16
+    }
+   ],
+   "bbox": [
+    0.0898,
+    0.2695,
+    0.8203,
+    0.4512
+   ]
+  },
+  {
+   "id": 29,
+   "slug": "brown-suede-penny-loafers",
+   "sku": "SHO-004",
+   "name": {
+    "en": "Brown Suede Penny Loafers",
+    "ar": "لوفر جلد سويدي بني"
+   },
+   "description": {
+    "en": "Hand-crafted brown suede penny loafers with a smooth leather sole.",
+    "ar": "لوفر مصنوع يدوياً من جلد سويدي بني مع نعل جلدي ناعم."
+   },
+   "longDescription": {
+    "en": "<p>Hand-crafted brown suede penny loafers with a smooth leather sole.</p><h3>Benefits</h3><ul><li>Brushed suede with a deep, even nap.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shoes & Sneakers</li><li>Reference: SHO-004</li><li>Approximate weight: 0.9 kg</li><li>Primary materials: suede</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Brush with a suede brush after each wear.</li><li>Treat with a protector spray before first wear.</li><li>Never machine wash.</li></ul>",
+    "ar": "<p>لوفر مصنوع يدوياً من جلد سويدي بني مع نعل جلدي ناعم.</p><h3>المميزات</h3><ul><li>جلد شامواه مصقول بملمس مخملي متجانس.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: أحذية</li><li>الرقم المرجعي: SHO-004</li><li>الوزن التقريبي: 0.9 كجم</li><li>الخامات الأساسية: suede</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُفرش بفرشاة الشامواه بعد كل استخدام.</li><li>يُرش بمادة واقية قبل أول استخدام.</li><li>لا يُغسل في الغسالة إطلاقاً.</li></ul>"
+   },
+   "price": 179,
+   "compareAtPrice": null,
+   "categoryId": 6,
+   "stock": 35,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "loafers",
+    "suede",
+    "brown",
+    "smart-casual"
+   ],
+   "rating": 4,
+   "reviewCount": 7,
+   "createdAt": "2026-08-28T13:03:52.000Z",
+   "image": "/assets/products/f21b9d90-ee72-4927-b88a-c59243fb2ff7.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 18
+    },
+    {
+     "value": "Brown",
+     "label": {
+      "en": "Brown",
+      "ar": "بني"
+     },
+     "hex": "#6f4c34",
+     "stock": 22
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 22
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 32
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Shoe Size",
+     "value": "40",
+     "stock": 12
+    },
+    {
+     "type": "Shoe Size",
+     "value": "41",
+     "stock": 24
+    },
+    {
+     "type": "Shoe Size",
+     "value": "42",
+     "stock": 24
+    },
+    {
+     "type": "Shoe Size",
+     "value": "43",
+     "stock": 1
+    },
+    {
+     "type": "Shoe Size",
+     "value": "44",
+     "stock": 7
+    },
+    {
+     "type": "Shoe Size",
+     "value": "45",
+     "stock": 14
+    }
+   ],
+   "bbox": [
+    0.1504,
+    0.4062,
+    0.707,
+    0.3076
+   ]
+  },
+  {
+   "id": 28,
+   "slug": "tan-leather-chelsea-boots",
+   "sku": "SHO-003",
+   "name": {
+    "en": "Tan Leather Chelsea Boots",
+    "ar": "بوت تشيلسي جلد عسلي"
+   },
+   "description": {
+    "en": "Sleek tan leather Chelsea boots with elastic side panels and pull tab.",
+    "ar": "بوت تشيلسي أنيق من جلد عسلي بألواح جانبية مطاطية ولسان سحب."
+   },
+   "longDescription": {
+    "en": "<p>Sleek tan leather Chelsea boots with elastic side panels and pull tab.</p><h3>Benefits</h3><ul><li>Reinforced heel and toe built to take daily wear.</li><li>Full-grain leather that darkens and softens with wear.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shoes & Sneakers</li><li>Reference: SHO-003</li><li>Approximate weight: 1.3 kg</li><li>Primary materials: leather</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Wipe clean with a damp cloth.</li><li>Condition twice a year to keep the grain supple.</li><li>Keep away from direct heat and prolonged sunlight.</li></ul>",
+    "ar": "<p>بوت تشيلسي أنيق من جلد عسلي بألواح جانبية مطاطية ولسان سحب.</p><h3>المميزات</h3><ul><li>كعب ومقدمة معززان يتحملان الاستخدام اليومي.</li><li>جلد طبيعي يزداد نعومة ويغمق لونه مع الاستخدام.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: أحذية</li><li>الرقم المرجعي: SHO-003</li><li>الوزن التقريبي: 1.3 كجم</li><li>الخامات الأساسية: leather</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>ينظف بقطعة قماش مبللة.</li><li>يُعالج بملطف الجلد مرتين سنوياً للحفاظ على نعومته.</li><li>يُحفظ بعيداً عن الحرارة المباشرة وأشعة الشمس الطويلة.</li></ul>"
+   },
+   "price": 199,
+   "compareAtPrice": 249,
+   "categoryId": 6,
+   "stock": 45,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "boots",
+    "chelsea",
+    "leather",
+    "tan"
+   ],
+   "rating": 3.13,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:51.000Z",
+   "image": "/assets/products/a040da50-b3e0-4584-b51e-4fb74df9bb83.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 14
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 15
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 13
+    },
+    {
+     "value": "Tan",
+     "label": {
+      "en": "Tan",
+      "ar": "بني فاتح"
+     },
+     "hex": "#c9a074",
+     "stock": 34
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Shoe Size",
+     "value": "40",
+     "stock": 4
+    },
+    {
+     "type": "Shoe Size",
+     "value": "41",
+     "stock": 6
+    },
+    {
+     "type": "Shoe Size",
+     "value": "42",
+     "stock": 3
+    },
+    {
+     "type": "Shoe Size",
+     "value": "43",
+     "stock": 3
+    },
+    {
+     "type": "Shoe Size",
+     "value": "44",
+     "stock": 2
+    },
+    {
+     "type": "Shoe Size",
+     "value": "45",
+     "stock": 8
+    }
+   ],
+   "bbox": [
+    0.1035,
+    0.2705,
+    0.7832,
+    0.5205
+   ]
+  },
+  {
+   "id": 27,
+   "slug": "white-high-top-canvas-sneakers",
+   "sku": "SHO-002",
+   "name": {
+    "en": "White High-Top Canvas Sneakers",
+    "ar": "حذاء كانفس أبيض عالي الرقبة"
+   },
+   "description": {
+    "en": "Classic high-top canvas sneakers in white with rubber toe cap.",
+    "ar": "حذاء كانفس كلاسيكي عالي الرقبة بلون أبيض مع غطاء أصبع مطاطي."
+   },
+   "longDescription": {
+    "en": "<p>Classic high-top canvas sneakers in white with rubber toe cap.</p><h3>Benefits</h3><ul><li>Grippy rubber outsole with a low-profile silhouette.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shoes & Sneakers</li><li>Reference: SHO-002</li><li>Approximate weight: 0.85 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>حذاء كانفس كلاسيكي عالي الرقبة بلون أبيض مع غطاء أصبع مطاطي.</p><h3>المميزات</h3><ul><li>نعل خارجي مطاطي بقبضة قوية وتصميم منخفض.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: أحذية</li><li>الرقم المرجعي: SHO-002</li><li>الوزن التقريبي: 0.85 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 79,
+   "compareAtPrice": null,
+   "categoryId": 6,
+   "stock": 110,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "shoes",
+    "sneakers",
+    "high-top",
+    "canvas"
+   ],
+   "rating": 4.07,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:51.000Z",
+   "image": "/assets/products/0868019e-eb06-4872-87be-a9e81a8a2935.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 6
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 28
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 9
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 30
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Shoe Size",
+     "value": "40",
+     "stock": 3
+    },
+    {
+     "type": "Shoe Size",
+     "value": "41",
+     "stock": 11
+    },
+    {
+     "type": "Shoe Size",
+     "value": "42",
+     "stock": 10
+    },
+    {
+     "type": "Shoe Size",
+     "value": "43",
+     "stock": 17
+    },
+    {
+     "type": "Shoe Size",
+     "value": "44",
+     "stock": 0
+    },
+    {
+     "type": "Shoe Size",
+     "value": "45",
+     "stock": 18
+    }
+   ],
+   "bbox": [
+    0.1338,
+    0.3271,
+    0.7373,
+    0.6729
+   ]
+  },
+  {
+   "id": 26,
+   "slug": "white-low-top-leather-sneakers",
+   "sku": "SHO-001",
+   "name": {
+    "en": "White Low-Top Leather Sneakers",
+    "ar": "حذاء جلد أبيض منخفض"
+   },
+   "description": {
+    "en": "Minimalist white leather low-tops on a clean white rubber sole.",
+    "ar": "حذاء منخفض من الجلد الأبيض بنعل مطاطي أبيض نظيف."
+   },
+   "longDescription": {
+    "en": "<p>Minimalist white leather low-tops on a clean white rubber sole.</p><h3>Benefits</h3><ul><li>Grippy rubber outsole with a low-profile silhouette.</li><li>Full-grain leather that darkens and softens with wear.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shoes & Sneakers</li><li>Reference: SHO-001</li><li>Approximate weight: 0.95 kg</li><li>Primary materials: leather</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Wipe clean with a damp cloth.</li><li>Condition twice a year to keep the grain supple.</li><li>Keep away from direct heat and prolonged sunlight.</li></ul>",
+    "ar": "<p>حذاء منخفض من الجلد الأبيض بنعل مطاطي أبيض نظيف.</p><h3>المميزات</h3><ul><li>نعل خارجي مطاطي بقبضة قوية وتصميم منخفض.</li><li>جلد طبيعي يزداد نعومة ويغمق لونه مع الاستخدام.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: أحذية</li><li>الرقم المرجعي: SHO-001</li><li>الوزن التقريبي: 0.95 كجم</li><li>الخامات الأساسية: leather</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>ينظف بقطعة قماش مبللة.</li><li>يُعالج بملطف الجلد مرتين سنوياً للحفاظ على نعومته.</li><li>يُحفظ بعيداً عن الحرارة المباشرة وأشعة الشمس الطويلة.</li></ul>"
+   },
+   "price": 129,
+   "compareAtPrice": null,
+   "categoryId": 6,
+   "stock": 90,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "shoes",
+    "sneakers",
+    "low-top",
+    "white",
+    "leather"
+   ],
+   "rating": 4.14,
+   "reviewCount": 7,
+   "createdAt": "2026-08-28T13:03:50.000Z",
+   "image": "/assets/products/56c19a74-9490-408e-ad1f-8cfd104f55a3.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 11
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 15
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 10
+    },
+    {
+     "value": "White",
+     "label": {
+      "en": "White",
+      "ar": "أبيض"
+     },
+     "hex": "#f4f4f2",
+     "stock": 9
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Shoe Size",
+     "value": "40",
+     "stock": 14
+    },
+    {
+     "type": "Shoe Size",
+     "value": "41",
+     "stock": 13
+    },
+    {
+     "type": "Shoe Size",
+     "value": "42",
+     "stock": 17
+    },
+    {
+     "type": "Shoe Size",
+     "value": "43",
+     "stock": 21
+    },
+    {
+     "type": "Shoe Size",
+     "value": "44",
+     "stock": 2
+    },
+    {
+     "type": "Shoe Size",
+     "value": "45",
+     "stock": 19
+    }
+   ],
+   "bbox": [
+    0.1338,
+    0.4326,
+    0.7432,
+    0.5225
+   ]
+  },
+  {
+   "id": 25,
+   "slug": "navy-henley-long-sleeve",
+   "sku": "SHR-005",
+   "name": {
+    "en": "Navy Henley Long-Sleeve",
+    "ar": "هنلي كحلي بأكمام طويلة"
+   },
+   "description": {
+    "en": "Three-button placket henley in soft navy cotton with ribbed cuffs.",
+    "ar": "هنلي بثلاثة أزرار من قطن كحلي ناعم مع أساور مضلعة."
+   },
+   "longDescription": {
+    "en": "<p>Three-button placket henley in soft navy cotton with ribbed cuffs.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shirts</li><li>Reference: SHR-005</li><li>Approximate weight: 0.28 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>هنلي بثلاثة أزرار من قطن كحلي ناعم مع أساور مضلعة.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قمصان</li><li>الرقم المرجعي: SHR-005</li><li>الوزن التقريبي: 0.28 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 49,
+   "compareAtPrice": null,
+   "categoryId": 5,
+   "stock": 100,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "shirt",
+    "henley",
+    "navy",
+    "long-sleeve"
+   ],
+   "rating": 3.9,
+   "reviewCount": 10,
+   "createdAt": "2026-08-28T13:03:49.000Z",
+   "image": "/assets/products/faaeead9-d8dd-4991-860c-76425005b30d.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 16
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 24
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 13
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 17
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 17
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 20
+    }
+   ],
+   "bbox": [
+    0.2227,
+    0.2129,
+    0.5527,
+    0.5645
+   ]
+  },
+  {
+   "id": 24,
+   "slug": "indigo-denim-shirt",
+   "sku": "SHR-004",
+   "name": {
+    "en": "Indigo Denim Shirt",
+    "ar": "قميص دنيم نيلي"
+   },
+   "description": {
+    "en": "Long-sleeve denim shirt in indigo with snap-closure chest pockets.",
+    "ar": "قميص دنيم بأكمام طويلة باللون النيلي مع جيوب صدر بأزرار ضغط."
+   },
+   "longDescription": {
+    "en": "<p>Long-sleeve denim shirt in indigo with snap-closure chest pockets.</p><h3>Benefits</h3><ul><li>Sturdy denim with just enough give to break in quickly.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shirts</li><li>Reference: SHR-004</li><li>Approximate weight: 0.45 kg</li><li>Primary materials: denim</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قميص دنيم بأكمام طويلة باللون النيلي مع جيوب صدر بأزرار ضغط.</p><h3>المميزات</h3><ul><li>دنيم متين بمرونة كافية ليصبح مريحاً سريعاً.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قمصان</li><li>الرقم المرجعي: SHR-004</li><li>الوزن التقريبي: 0.45 كجم</li><li>الخامات الأساسية: denim</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 89,
+   "compareAtPrice": null,
+   "categoryId": 5,
+   "stock": 75,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "shirt",
+    "denim",
+    "indigo"
+   ],
+   "rating": 3.33,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:49.000Z",
+   "image": "/assets/products/806394b2-69f0-4a40-81e4-1b83b4058eb7.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 16
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 36
+    },
+    {
+     "value": "Indigo",
+     "label": {
+      "en": "Indigo",
+      "ar": "نيلي"
+     },
+     "hex": "#3b4a6b",
+     "stock": 18
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 34
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 19
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 9
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 17
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 4
+    }
+   ],
+   "bbox": [
+    0.127,
+    0.0996,
+    0.7451,
+    0.8037
+   ]
+  },
+  {
+   "id": 23,
+   "slug": "beige-linen-shirt",
+   "sku": "SHR-003",
+   "name": {
+    "en": "Beige Linen Shirt",
+    "ar": "قميص كتان بيج"
+   },
+   "description": {
+    "en": "Relaxed-fit pure linen shirt in warm beige with mother-of-pearl buttons.",
+    "ar": "قميص كتان نقي بقصة مريحة بلون بيج دافئ وأزرار من اللؤلؤ."
+   },
+   "longDescription": {
+    "en": "<p>Relaxed-fit pure linen shirt in warm beige with mother-of-pearl buttons.</p><h3>Benefits</h3><ul><li>Loose linen weave that moves air, built for warm days.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shirts</li><li>Reference: SHR-003</li><li>Approximate weight: 0.28 kg</li><li>Primary materials: linen</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold on a gentle cycle.</li><li>Line dry in shade, iron while slightly damp.</li><li>Do not tumble dry.</li></ul>",
+    "ar": "<p>قميص كتان نقي بقصة مريحة بلون بيج دافئ وأزرار من اللؤلؤ.</p><h3>المميزات</h3><ul><li>نسيج كتان خفيف يسمح بمرور الهواء، مصمم للأيام الدافئة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قمصان</li><li>الرقم المرجعي: SHR-003</li><li>الوزن التقريبي: 0.28 كجم</li><li>الخامات الأساسية: linen</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد على دورة لطيفة.</li><li>يُنشر في الظل ويُكوى وهو رطب قليلاً.</li><li>لا يُجفف في المجفف.</li></ul>"
+   },
+   "price": 95,
+   "compareAtPrice": null,
+   "categoryId": 5,
+   "stock": 60,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "shirt",
+    "linen",
+    "beige",
+    "summer"
+   ],
+   "rating": 4.57,
+   "reviewCount": 7,
+   "createdAt": "2026-08-28T13:03:48.000Z",
+   "image": "/assets/products/4bc79053-a54d-4205-97ae-f15d19157a53.png",
+   "colors": [
+    {
+     "value": "Beige",
+     "label": {
+      "en": "Beige",
+      "ar": "بيج"
+     },
+     "hex": "#ded2ba",
+     "stock": 28
+    },
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 21
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 6
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 25
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 19
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 12
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 10
+    }
+   ],
+   "bbox": [
+    0.1367,
+    0.0908,
+    0.7178,
+    0.8096
+   ]
+  },
+  {
+   "id": 22,
+   "slug": "red-black-flannel-shirt",
+   "sku": "SHR-002",
+   "name": {
+    "en": "Red & Black Flannel Shirt",
+    "ar": "قميص فلانيل أحمر وأسود"
+   },
+   "description": {
+    "en": "Soft brushed cotton flannel in buffalo plaid with chest flap pockets.",
+    "ar": "قميص فلانيل من قطن مفرشي بنقشة بوفالو مع جيبين على الصدر."
+   },
+   "longDescription": {
+    "en": "<p>Soft brushed cotton flannel in buffalo plaid with chest flap pockets.</p><h3>Benefits</h3><ul><li>Easy enough for everyday wear, sharp enough to dress up.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shirts</li><li>Reference: SHR-002</li><li>Approximate weight: 0.45 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قميص فلانيل من قطن مفرشي بنقشة بوفالو مع جيبين على الصدر.</p><h3>المميزات</h3><ul><li>مريح للارتداء اليومي وأنيق بما يكفي للمناسبات.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قمصان</li><li>الرقم المرجعي: SHR-002</li><li>الوزن التقريبي: 0.45 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 69,
+   "compareAtPrice": 89,
+   "categoryId": 5,
+   "stock": 80,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "shirt",
+    "flannel",
+    "plaid",
+    "casual"
+   ],
+   "rating": 4.07,
+   "reviewCount": 14,
+   "createdAt": "2026-08-28T13:03:48.000Z",
+   "image": "/assets/products/bfca93db-a5c5-4315-b39b-3f1b8e998db3.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 33
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 30
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 31
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 37
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 24
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 14
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 16
+    }
+   ],
+   "bbox": [
+    0.1338,
+    0.1123,
+    0.7256,
+    0.7783
+   ]
+  },
+  {
+   "id": 21,
+   "slug": "white-oxford-button-down",
+   "sku": "SHR-001",
+   "name": {
+    "en": "White Oxford Button-Down Shirt",
+    "ar": "قميص أوكسفورد أبيض"
+   },
+   "description": {
+    "en": "Classic crisp white Oxford with button-down collar and chest pocket.",
+    "ar": "قميص أوكسفورد أبيض كلاسيكي بياقة بأزرار وجيب على الصدر."
+   },
+   "longDescription": {
+    "en": "<p>Classic crisp white Oxford with button-down collar and chest pocket.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Shirts</li><li>Reference: SHR-001</li><li>Approximate weight: 0.3 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قميص أوكسفورد أبيض كلاسيكي بياقة بأزرار وجيب على الصدر.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: قمصان</li><li>الرقم المرجعي: SHR-001</li><li>الوزن التقريبي: 0.3 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 79,
+   "compareAtPrice": null,
+   "categoryId": 5,
+   "stock": 130,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "shirt",
+    "oxford",
+    "white",
+    "smart-casual"
+   ],
+   "rating": 3.83,
+   "reviewCount": 12,
+   "createdAt": "2026-08-28T13:03:47.000Z",
+   "image": "/assets/products/62183035-497e-4c85-b24d-ace831c4ed2b.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 8
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 9
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 31
+    },
+    {
+     "value": "White",
+     "label": {
+      "en": "White",
+      "ar": "أبيض"
+     },
+     "hex": "#f4f4f2",
+     "stock": 7
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 7
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 23
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 15
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 7
+    }
+   ],
+   "bbox": [
+    0.1465,
+    0.085,
+    0.7051,
+    0.8311
+   ]
+  },
+  {
+   "id": 20,
+   "slug": "charcoal-wool-dress-trousers",
+   "sku": "PNT-005",
+   "name": {
+    "en": "Charcoal Wool Dress Trousers",
+    "ar": "بنطلون رسمي صوف رمادي"
+   },
+   "description": {
+    "en": "Tailored flat-front wool trousers in charcoal with sharp creases.",
+    "ar": "بنطلون رسمي مفصّل من الصوف بلون رمادي مع كسرات حادة."
+   },
+   "longDescription": {
+    "en": "<p>Tailored flat-front wool trousers in charcoal with sharp creases.</p><h3>Benefits</h3><ul><li>Fine wool blend that holds its shape and insulates without bulk.</li><li>Tailored for formal occasions, from black tie to boardroom.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Pants & Trousers</li><li>Reference: PNT-005</li><li>Approximate weight: 0.6 kg</li><li>Primary materials: wool</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Dry clean only.</li><li>Steam rather than iron to release creases.</li><li>Store on a wide hanger to hold the shoulder line.</li></ul>",
+    "ar": "<p>بنطلون رسمي مفصّل من الصوف بلون رمادي مع كسرات حادة.</p><h3>المميزات</h3><ul><li>خليط صوف ناعم يحافظ على قوامه ويمنح الدفء دون ثِقَل.</li><li>مفصّل للمناسبات الرسمية، من السهرات إلى الاجتماعات.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: بناطيل</li><li>الرقم المرجعي: PNT-005</li><li>الوزن التقريبي: 0.6 كجم</li><li>الخامات الأساسية: wool</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>التنظيف الجاف فقط.</li><li>يُستخدم البخار بدل المكواة لإزالة التجاعيد.</li><li>يُعلق على شماعة عريضة للحفاظ على خط الكتف.</li></ul>"
+   },
+   "price": 139,
+   "compareAtPrice": null,
+   "categoryId": 4,
+   "stock": 45,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "trousers",
+    "wool",
+    "formal",
+    "charcoal"
+   ],
+   "rating": 3.64,
+   "reviewCount": 11,
+   "createdAt": "2026-08-28T13:03:46.000Z",
+   "image": "/assets/products/07cea363-7f01-4afe-8942-07713079e0fe.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 40
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 4
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 30
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 29
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Waist",
+     "value": "30",
+     "stock": 15
+    },
+    {
+     "type": "Waist",
+     "value": "32",
+     "stock": 6
+    },
+    {
+     "type": "Waist",
+     "value": "34",
+     "stock": 4
+    },
+    {
+     "type": "Waist",
+     "value": "36",
+     "stock": 18
+    },
+    {
+     "type": "Waist",
+     "value": "38",
+     "stock": 2
+    }
+   ],
+   "bbox": [
+    0.2568,
+    0.0693,
+    0.4795,
+    0.8662
+   ]
+  },
+  {
+   "id": 19,
+   "slug": "grey-tech-joggers",
+   "sku": "PNT-004",
+   "name": {
+    "en": "Grey Tech Joggers",
+    "ar": "جوغرز تقني رمادي"
+   },
+   "description": {
+    "en": "Tapered tech joggers in soft heather grey with zip side pockets and ribbed ankle cuffs.",
+    "ar": "جوغرز تقني مدبب بلون رمادي ناعم مع جيوب جانبية بسحاب وأساور مضلعة."
+   },
+   "longDescription": {
+    "en": "<p>Tapered tech joggers in soft heather grey with zip side pockets and ribbed ankle cuffs.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Pants & Trousers</li><li>Reference: PNT-004</li><li>Approximate weight: 0.45 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>جوغرز تقني مدبب بلون رمادي ناعم مع جيوب جانبية بسحاب وأساور مضلعة.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: بناطيل</li><li>الرقم المرجعي: PNT-004</li><li>الوزن التقريبي: 0.45 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 69,
+   "compareAtPrice": null,
+   "categoryId": 4,
+   "stock": 110,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "joggers",
+    "tech",
+    "grey",
+    "athleisure"
+   ],
+   "rating": 4.13,
+   "reviewCount": 8,
+   "createdAt": "2026-08-28T13:03:46.000Z",
+   "image": "/assets/products/e737a871-4a79-483f-bd1a-81d93a2daeb1.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 22
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 31
+    },
+    {
+     "value": "Heather Grey",
+     "label": {
+      "en": "Heather Grey",
+      "ar": "رمادي"
+     },
+     "hex": "#9aa0a6",
+     "stock": 18
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 17
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Waist",
+     "value": "30",
+     "stock": 12
+    },
+    {
+     "type": "Waist",
+     "value": "32",
+     "stock": 11
+    },
+    {
+     "type": "Waist",
+     "value": "34",
+     "stock": 3
+    },
+    {
+     "type": "Waist",
+     "value": "36",
+     "stock": 10
+    },
+    {
+     "type": "Waist",
+     "value": "38",
+     "stock": 6
+    }
+   ],
+   "bbox": [
+    0.2871,
+    0.084,
+    0.4238,
+    0.8359
+   ]
+  },
+  {
+   "id": 18,
+   "slug": "olive-cargo-pants",
+   "sku": "PNT-003",
+   "name": {
+    "en": "Olive Cargo Pants",
+    "ar": "بنطلون كارجو زيتي"
+   },
+   "description": {
+    "en": "Utility cargo pants in olive cotton twill with large side pockets and drawcord cuffs.",
+    "ar": "بنطلون كارجو من قطن تويل زيتي مع جيوب جانبية كبيرة وأساور برباط."
+   },
+   "longDescription": {
+    "en": "<p>Utility cargo pants in olive cotton twill with large side pockets and drawcord cuffs.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Pants & Trousers</li><li>Reference: PNT-003</li><li>Approximate weight: 0.75 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>بنطلون كارجو من قطن تويل زيتي مع جيوب جانبية كبيرة وأساور برباط.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: بناطيل</li><li>الرقم المرجعي: PNT-003</li><li>الوزن التقريبي: 0.75 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 89,
+   "compareAtPrice": null,
+   "categoryId": 4,
+   "stock": 60,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "cargo",
+    "olive",
+    "utility"
+   ],
+   "rating": 3.6,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:45.000Z",
+   "image": "/assets/products/c68f7bc3-c5e1-43a1-beb2-2c8736184124.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 28
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 5
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 7
+    },
+    {
+     "value": "Olive",
+     "label": {
+      "en": "Olive",
+      "ar": "زيتي"
+     },
+     "hex": "#5f6b3a",
+     "stock": 20
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Waist",
+     "value": "30",
+     "stock": 1
+    },
+    {
+     "type": "Waist",
+     "value": "32",
+     "stock": 18
+    },
+    {
+     "type": "Waist",
+     "value": "34",
+     "stock": 20
+    },
+    {
+     "type": "Waist",
+     "value": "36",
+     "stock": 3
+    },
+    {
+     "type": "Waist",
+     "value": "38",
+     "stock": 11
+    }
+   ],
+   "bbox": [
+    0.2012,
+    0.0,
+    0.6777,
+    0.8965
+   ]
+  },
+  {
+   "id": 17,
+   "slug": "khaki-chinos",
+   "sku": "PNT-002",
+   "name": {
+    "en": "Khaki Chinos",
+    "ar": "شينو كاكي"
+   },
+   "description": {
+    "en": "Slim flat-front chinos in classic khaki cotton twill.",
+    "ar": "شينو ضيق مسطح الواجهة من قطن تويل كاكي كلاسيكي."
+   },
+   "longDescription": {
+    "en": "<p>Slim flat-front chinos in classic khaki cotton twill.</p><h3>Benefits</h3><ul><li>Slim cut through the body with a clean, tapered line.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Pants & Trousers</li><li>Reference: PNT-002</li><li>Approximate weight: 0.55 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>شينو ضيق مسطح الواجهة من قطن تويل كاكي كلاسيكي.</p><h3>المميزات</h3><ul><li>قصة ضيقة عند الجسم بخط مستدق وأنيق.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: بناطيل</li><li>الرقم المرجعي: PNT-002</li><li>الوزن التقريبي: 0.55 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 79,
+   "compareAtPrice": 99,
+   "categoryId": 4,
+   "stock": 95,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "chinos",
+    "khaki",
+    "slim-fit"
+   ],
+   "rating": 4.33,
+   "reviewCount": 6,
+   "createdAt": "2026-08-28T13:03:44.000Z",
+   "image": "/assets/products/ab3265a3-c239-485d-ac0d-9fd400e6bb52.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 40
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 37
+    },
+    {
+     "value": "Khaki",
+     "label": {
+      "en": "Khaki",
+      "ar": "كاكي"
+     },
+     "hex": "#b6a179",
+     "stock": 13
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 20
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Waist",
+     "value": "30",
+     "stock": 7
+    },
+    {
+     "type": "Waist",
+     "value": "32",
+     "stock": 6
+    },
+    {
+     "type": "Waist",
+     "value": "34",
+     "stock": 8
+    },
+    {
+     "type": "Waist",
+     "value": "36",
+     "stock": 0
+    },
+    {
+     "type": "Waist",
+     "value": "38",
+     "stock": 2
+    }
+   ],
+   "bbox": [
+    0.2236,
+    0.0586,
+    0.5527,
+    0.8955
+   ]
+  },
+  {
+   "id": 16,
+   "slug": "slim-fit-raw-indigo-jeans",
+   "sku": "PNT-001",
+   "name": {
+    "en": "Slim-Fit Raw Indigo Jeans",
+    "ar": "جينز نيلي خام بقصة ضيقة"
+   },
+   "description": {
+    "en": "Slim five-pocket jeans in raw indigo denim with subtle knee fades.",
+    "ar": "جينز ضيق بخمسة جيوب من دنيم نيلي خام مع باهت طفيف عند الركبة."
+   },
+   "longDescription": {
+    "en": "<p>Slim five-pocket jeans in raw indigo denim with subtle knee fades.</p><h3>Benefits</h3><ul><li>Sturdy denim with just enough give to break in quickly.</li><li>Slim cut through the body with a clean, tapered line.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Pants & Trousers</li><li>Reference: PNT-001</li><li>Approximate weight: 0.7 kg</li><li>Primary materials: denim</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>جينز ضيق بخمسة جيوب من دنيم نيلي خام مع باهت طفيف عند الركبة.</p><h3>المميزات</h3><ul><li>دنيم متين بمرونة كافية ليصبح مريحاً سريعاً.</li><li>قصة ضيقة عند الجسم بخط مستدق وأنيق.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: بناطيل</li><li>الرقم المرجعي: PNT-001</li><li>الوزن التقريبي: 0.7 كجم</li><li>الخامات الأساسية: denim</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 109,
+   "compareAtPrice": null,
+   "categoryId": 4,
+   "stock": 70,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "jeans",
+    "denim",
+    "slim-fit",
+    "indigo"
+   ],
+   "rating": 3.73,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:44.000Z",
+   "image": "/assets/products/5c61d185-0576-4280-ae19-fa641ba29425.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 24
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 25
+    },
+    {
+     "value": "Indigo",
+     "label": {
+      "en": "Indigo",
+      "ar": "نيلي"
+     },
+     "hex": "#3b4a6b",
+     "stock": 19
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 22
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Waist",
+     "value": "30",
+     "stock": 8
+    },
+    {
+     "type": "Waist",
+     "value": "32",
+     "stock": 17
+    },
+    {
+     "type": "Waist",
+     "value": "34",
+     "stock": 16
+    },
+    {
+     "type": "Waist",
+     "value": "36",
+     "stock": 7
+    },
+    {
+     "type": "Waist",
+     "value": "38",
+     "stock": 15
+    }
+   ],
+   "bbox": [
+    0.2695,
+    0.0664,
+    0.4453,
+    0.8662
+   ]
+  },
+  {
+   "id": 15,
+   "slug": "camel-wool-trench-coat",
+   "sku": "JKT-005",
+   "name": {
+    "en": "Camel Wool Trench Coat",
+    "ar": "معطف ترِنش صوف جملي"
+   },
+   "description": {
+    "en": "Double-breasted knee-length trench in camel wool with belted waist.",
+    "ar": "معطف ترِنش بصفّين من الأزرار بطول الركبة من صوف جملي بحزام عند الخصر."
+   },
+   "longDescription": {
+    "en": "<p>Double-breasted knee-length trench in camel wool with belted waist.</p><h3>Benefits</h3><ul><li>Fine wool blend that holds its shape and insulates without bulk.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Jackets & Outerwear</li><li>Reference: JKT-005</li><li>Approximate weight: 1.8 kg</li><li>Primary materials: wool</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Dry clean only.</li><li>Steam rather than iron to release creases.</li><li>Store on a wide hanger to hold the shoulder line.</li></ul>",
+    "ar": "<p>معطف ترِنش بصفّين من الأزرار بطول الركبة من صوف جملي بحزام عند الخصر.</p><h3>المميزات</h3><ul><li>خليط صوف ناعم يحافظ على قوامه ويمنح الدفء دون ثِقَل.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: جاكيتات وملابس خارجية</li><li>الرقم المرجعي: JKT-005</li><li>الوزن التقريبي: 1.8 كجم</li><li>الخامات الأساسية: wool</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>التنظيف الجاف فقط.</li><li>يُستخدم البخار بدل المكواة لإزالة التجاعيد.</li><li>يُعلق على شماعة عريضة للحفاظ على خط الكتف.</li></ul>"
+   },
+   "price": 449,
+   "compareAtPrice": null,
+   "categoryId": 3,
+   "stock": 15,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "coat",
+    "wool",
+    "trench",
+    "camel"
+   ],
+   "rating": 3.91,
+   "reviewCount": 11,
+   "createdAt": "2026-08-28T13:03:43.000Z",
+   "image": "/assets/products/a1e96e5f-044b-4ac1-9ff8-1b995000965b.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 10
+    },
+    {
+     "value": "Camel",
+     "label": {
+      "en": "Camel",
+      "ar": "جملي"
+     },
+     "hex": "#b08956",
+     "stock": 13
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 16
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 4
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 12
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 18
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 20
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 0
+    }
+   ],
+   "bbox": [
+    0.2383,
+    0.0732,
+    0.5186,
+    0.8486
+   ]
+  },
+  {
+   "id": 14,
+   "slug": "army-green-puffer-jacket",
+   "sku": "JKT-004",
+   "name": {
+    "en": "Army Green Puffer Jacket",
+    "ar": "جاكيت منفوخ أخضر عسكري"
+   },
+   "description": {
+    "en": "Quilted horizontal-channel puffer with stand collar and two zip pockets.",
+    "ar": "جاكيت منفوخ بقنوات أفقية مبطنة بياقة قائمة وجيبين بسحاب."
+   },
+   "longDescription": {
+    "en": "<p>Quilted horizontal-channel puffer with stand collar and two zip pockets.</p><h3>Benefits</h3><ul><li>Layered construction that holds up through cold months.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Jackets & Outerwear</li><li>Reference: JKT-004</li><li>Approximate weight: 1.1 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>جاكيت منفوخ بقنوات أفقية مبطنة بياقة قائمة وجيبين بسحاب.</p><h3>المميزات</h3><ul><li>تركيب متعدد الطبقات يصمد خلال شهور البرد.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: جاكيتات وملابس خارجية</li><li>الرقم المرجعي: JKT-004</li><li>الوزن التقريبي: 1.1 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 189,
+   "compareAtPrice": 229,
+   "categoryId": 3,
+   "stock": 28,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "jacket",
+    "puffer",
+    "army-green",
+    "winter"
+   ],
+   "rating": 4.29,
+   "reviewCount": 14,
+   "createdAt": "2026-08-28T13:03:42.000Z",
+   "image": "/assets/products/01533db2-d4b3-40cb-8029-6811684e3b8e.png",
+   "colors": [
+    {
+     "value": "Army Green",
+     "label": {
+      "en": "Army Green",
+      "ar": "أخضر عسكري"
+     },
+     "hex": "#4a5340",
+     "stock": 38
+    },
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 8
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 32
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 4
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 8
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 18
+    }
+   ],
+   "bbox": [
+    0.0469,
+    0.0947,
+    0.9053,
+    0.7969
+   ]
+  },
+  {
+   "id": 13,
+   "slug": "indigo-denim-trucker-jacket",
+   "sku": "JKT-003",
+   "name": {
+    "en": "Indigo Denim Trucker Jacket",
+    "ar": "جاكيت دنيم نيلي"
+   },
+   "description": {
+    "en": "Mid-wash indigo trucker with twin chest pockets and contrast stitching.",
+    "ar": "جاكيت تركر نيلي بغسلة متوسطة وجيبين على الصدر وخياطة متباينة."
+   },
+   "longDescription": {
+    "en": "<p>Mid-wash indigo trucker with twin chest pockets and contrast stitching.</p><h3>Benefits</h3><ul><li>Sturdy denim with just enough give to break in quickly.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Jackets & Outerwear</li><li>Reference: JKT-003</li><li>Approximate weight: 0.8 kg</li><li>Primary materials: denim</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>جاكيت تركر نيلي بغسلة متوسطة وجيبين على الصدر وخياطة متباينة.</p><h3>المميزات</h3><ul><li>دنيم متين بمرونة كافية ليصبح مريحاً سريعاً.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: جاكيتات وملابس خارجية</li><li>الرقم المرجعي: JKT-003</li><li>الوزن التقريبي: 0.8 كجم</li><li>الخامات الأساسية: denim</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 119,
+   "compareAtPrice": null,
+   "categoryId": 3,
+   "stock": 60,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "jacket",
+    "denim",
+    "trucker",
+    "indigo"
+   ],
+   "rating": 3.58,
+   "reviewCount": 12,
+   "createdAt": "2026-08-28T13:03:41.000Z",
+   "image": "/assets/products/9e743c89-ddd5-4a73-8f5e-b44a9244ec24.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 15
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 19
+    },
+    {
+     "value": "Indigo",
+     "label": {
+      "en": "Indigo",
+      "ar": "نيلي"
+     },
+     "hex": "#3b4a6b",
+     "stock": 27
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 13
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 13
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 5
+    }
+   ],
+   "bbox": [
+    0.1172,
+    0.1387,
+    0.7676,
+    0.7275
+   ]
+  },
+  {
+   "id": 12,
+   "slug": "olive-bomber-jacket",
+   "sku": "JKT-002",
+   "name": {
+    "en": "Olive Bomber Jacket",
+    "ar": "جاكيت بومبر زيتي"
+   },
+   "description": {
+    "en": "Classic MA-1 bomber in olive with orange interior lining and ribbed cuffs.",
+    "ar": "جاكيت بومبر كلاسيكي MA-1 باللون الزيتي ببطانة برتقالية وأساور مضلعة."
+   },
+   "longDescription": {
+    "en": "<p>Classic MA-1 bomber in olive with orange interior lining and ribbed cuffs.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Jackets & Outerwear</li><li>Reference: JKT-002</li><li>Approximate weight: 0.95 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>جاكيت بومبر كلاسيكي MA-1 باللون الزيتي ببطانة برتقالية وأساور مضلعة.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: جاكيتات وملابس خارجية</li><li>الرقم المرجعي: JKT-002</li><li>الوزن التقريبي: 0.95 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 159,
+   "compareAtPrice": null,
+   "categoryId": 3,
+   "stock": 38,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "jacket",
+    "bomber",
+    "olive"
+   ],
+   "rating": 4.4,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:40.000Z",
+   "image": "/assets/products/ea1892ea-4ee3-4010-a8b7-baa1105078aa.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 39
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 16
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 22
+    },
+    {
+     "value": "Olive",
+     "label": {
+      "en": "Olive",
+      "ar": "زيتي"
+     },
+     "hex": "#5f6b3a",
+     "stock": 25
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 9
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 9
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 18
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 17
+    }
+   ],
+   "bbox": [
+    0.1572,
+    0.1562,
+    0.6826,
+    0.6709
+   ]
+  },
+  {
+   "id": 11,
+   "slug": "dark-brown-leather-biker-jacket",
+   "sku": "JKT-001",
+   "name": {
+    "en": "Dark Brown Leather Biker Jacket",
+    "ar": "جاكيت جلد بني داكن بايكر"
+   },
+   "description": {
+    "en": "Full-grain leather biker with asymmetric zip, snap lapels and silver hardware.",
+    "ar": "جاكيت بايكر من الجلد الطبيعي بسحاب مائل وياقات بقبس وأدوات فضية."
+   },
+   "longDescription": {
+    "en": "<p>Full-grain leather biker with asymmetric zip, snap lapels and silver hardware.</p><h3>Benefits</h3><ul><li>Full-grain leather that darkens and softens with wear.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Jackets & Outerwear</li><li>Reference: JKT-001</li><li>Approximate weight: 1.4 kg</li><li>Primary materials: leather</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Wipe clean with a damp cloth.</li><li>Condition twice a year to keep the grain supple.</li><li>Keep away from direct heat and prolonged sunlight.</li></ul>",
+    "ar": "<p>جاكيت بايكر من الجلد الطبيعي بسحاب مائل وياقات بقبس وأدوات فضية.</p><h3>المميزات</h3><ul><li>جلد طبيعي يزداد نعومة ويغمق لونه مع الاستخدام.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: جاكيتات وملابس خارجية</li><li>الرقم المرجعي: JKT-001</li><li>الوزن التقريبي: 1.4 كجم</li><li>الخامات الأساسية: leather</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>ينظف بقطعة قماش مبللة.</li><li>يُعالج بملطف الجلد مرتين سنوياً للحفاظ على نعومته.</li><li>يُحفظ بعيداً عن الحرارة المباشرة وأشعة الشمس الطويلة.</li></ul>"
+   },
+   "price": 349,
+   "compareAtPrice": 429,
+   "categoryId": 3,
+   "stock": 22,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "jacket",
+    "leather",
+    "biker",
+    "brown"
+   ],
+   "rating": 3.75,
+   "reviewCount": 8,
+   "createdAt": "2026-08-28T13:03:40.000Z",
+   "image": "/assets/products/5addfd97-4706-40aa-8c75-e2c695429784.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 5
+    },
+    {
+     "value": "Brown",
+     "label": {
+      "en": "Brown",
+      "ar": "بني"
+     },
+     "hex": "#6f4c34",
+     "stock": 16
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 9
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 28
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 21
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 3
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 7
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 10
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 17
+    }
+   ],
+   "bbox": [
+    0.1289,
+    0.0938,
+    0.7373,
+    0.7998
+   ]
+  },
+  {
+   "id": 10,
+   "slug": "oversized-washed-brown-hoodie",
+   "sku": "HOD-005",
+   "name": {
+    "en": "Oversized Washed Brown Hoodie",
+    "ar": "هودي بني مغسول فضفاض"
+   },
+   "description": {
+    "en": "Heavyweight cotton hoodie with dropped shoulders and a distressed wash.",
+    "ar": "هودي قطن ثقيل بكتف مسدل وغسلة باهتة."
+   },
+   "longDescription": {
+    "en": "<p>Heavyweight cotton hoodie with dropped shoulders and a distressed wash.</p><h3>Benefits</h3><ul><li>Relaxed oversized cut with dropped shoulders.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hoodies & Sweatshirts</li><li>Reference: HOD-005</li><li>Approximate weight: 0.95 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>هودي قطن ثقيل بكتف مسدل وغسلة باهتة.</p><h3>المميزات</h3><ul><li>قصة فضفاضة مريحة بأكتاف مسدلة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: هوديز وسويتشرت</li><li>الرقم المرجعي: HOD-005</li><li>الوزن التقريبي: 0.95 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 95,
+   "compareAtPrice": null,
+   "categoryId": 2,
+   "stock": 50,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hoodie",
+    "oversized",
+    "washed",
+    "brown"
+   ],
+   "rating": 4.27,
+   "reviewCount": 15,
+   "createdAt": "2026-08-28T13:03:39.000Z",
+   "image": "/assets/products/70480fa2-78cd-412e-b8ed-9d9e7fc49e59.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 5
+    },
+    {
+     "value": "Brown",
+     "label": {
+      "en": "Brown",
+      "ar": "بني"
+     },
+     "hex": "#6f4c34",
+     "stock": 15
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 36
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 10
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 8
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 11
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 0
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 1
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 0
+    }
+   ],
+   "bbox": [
+    0.1113,
+    0.0439,
+    0.7754,
+    0.8896
+   ]
+  },
+  {
+   "id": 9,
+   "slug": "forest-green-half-zip-sweatshirt",
+   "sku": "HOD-004",
+   "name": {
+    "en": "Forest Green Half-Zip Sweatshirt",
+    "ar": "سويتشرت أخضر داكن بنصف سحاب"
+   },
+   "description": {
+    "en": "Brushed-fleece half-zip pullover in deep forest green with a contrast metallic zip.",
+    "ar": "سويتشرت من فلِيس مفرشي بنصف سحاب باللون الأخضر الغامق مع سحاب معدني متباين."
+   },
+   "longDescription": {
+    "en": "<p>Brushed-fleece half-zip pullover in deep forest green with a contrast metallic zip.</p><h3>Benefits</h3><ul><li>Brushed fleece interior that traps warmth close to the body.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hoodies & Sweatshirts</li><li>Reference: HOD-004</li><li>Approximate weight: 0.75 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>سويتشرت من فلِيس مفرشي بنصف سحاب باللون الأخضر الغامق مع سحاب معدني متباين.</p><h3>المميزات</h3><ul><li>بطانة صوفية مصقولة تحتفظ بالدفء قرب الجسم.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: هوديز وسويتشرت</li><li>الرقم المرجعي: HOD-004</li><li>الوزن التقريبي: 0.75 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 89,
+   "compareAtPrice": 109,
+   "categoryId": 2,
+   "stock": 40,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "sweatshirt",
+    "half-zip",
+    "fleece",
+    "green"
+   ],
+   "rating": 3.9,
+   "reviewCount": 10,
+   "createdAt": "2026-08-28T13:03:38.000Z",
+   "image": "/assets/products/a15bc427-0aff-4ef7-9560-ce5b55d1211e.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 33
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 6
+    },
+    {
+     "value": "Forest Green",
+     "label": {
+      "en": "Forest Green",
+      "ar": "أخضر"
+     },
+     "hex": "#2f5d43",
+     "stock": 20
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 30
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 13
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 15
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 13
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 13
+    }
+   ],
+   "bbox": [
+    0.1943,
+    0.0693,
+    0.6133,
+    0.8066
+   ]
+  },
+  {
+   "id": 8,
+   "slug": "charcoal-crew-sweatshirt",
+   "sku": "HOD-003",
+   "name": {
+    "en": "Charcoal Crew Sweatshirt",
+    "ar": "سويتشرت رمادي داكن"
+   },
+   "description": {
+    "en": "Classic relaxed-fit crew sweatshirt with ribbed cuffs and hem in charcoal.",
+    "ar": "سويتشرت كلاسيكي بقصة مريحة مع أساور وحاشية مضلعة باللون الرمادي الداكن."
+   },
+   "longDescription": {
+    "en": "<p>Classic relaxed-fit crew sweatshirt with ribbed cuffs and hem in charcoal.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hoodies & Sweatshirts</li><li>Reference: HOD-003</li><li>Approximate weight: 0.7 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>سويتشرت كلاسيكي بقصة مريحة مع أساور وحاشية مضلعة باللون الرمادي الداكن.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: هوديز وسويتشرت</li><li>الرقم المرجعي: HOD-003</li><li>الوزن التقريبي: 0.7 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 65,
+   "compareAtPrice": null,
+   "categoryId": 2,
+   "stock": 90,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "sweatshirt",
+    "crew",
+    "charcoal",
+    "basics"
+   ],
+   "rating": 3.57,
+   "reviewCount": 7,
+   "createdAt": "2026-08-28T13:03:38.000Z",
+   "image": "/assets/products/a636227a-1555-4655-abb8-3b7b0134652a.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 15
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 26
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 33
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 22
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 10
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 19
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 15
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 20
+    }
+   ],
+   "bbox": [
+    0.0879,
+    0.1543,
+    0.8047,
+    0.7021
+   ]
+  },
+  {
+   "id": 7,
+   "slug": "cream-pullover-hoodie",
+   "sku": "HOD-002",
+   "name": {
+    "en": "Cream Pullover Hoodie",
+    "ar": "هودي كريمي بدون سحاب"
+   },
+   "description": {
+    "en": "Brushed-fleece pullover hoodie in soft cream with a roomy kangaroo pocket.",
+    "ar": "هودي بدون سحاب من فلِيس مفرشي ناعم بلون كريمي مع جيب فسيح."
+   },
+   "longDescription": {
+    "en": "<p>Brushed-fleece pullover hoodie in soft cream with a roomy kangaroo pocket.</p><h3>Benefits</h3><ul><li>Brushed fleece interior that traps warmth close to the body.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hoodies & Sweatshirts</li><li>Reference: HOD-002</li><li>Approximate weight: 0.85 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>هودي بدون سحاب من فلِيس مفرشي ناعم بلون كريمي مع جيب فسيح.</p><h3>المميزات</h3><ul><li>بطانة صوفية مصقولة تحتفظ بالدفء قرب الجسم.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: هوديز وسويتشرت</li><li>الرقم المرجعي: HOD-002</li><li>الوزن التقريبي: 0.85 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 75,
+   "compareAtPrice": null,
+   "categoryId": 2,
+   "stock": 55,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "hoodie",
+    "pullover",
+    "fleece",
+    "cream"
+   ],
+   "rating": 4.18,
+   "reviewCount": 11,
+   "createdAt": "2026-08-28T13:03:37.000Z",
+   "image": "/assets/products/2c0cfce8-c4f8-4fc9-9b93-3dbe9619b84d.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 35
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 22
+    },
+    {
+     "value": "Cream",
+     "label": {
+      "en": "Cream",
+      "ar": "كريمي"
+     },
+     "hex": "#efe6d4",
+     "stock": 24
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 33
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 2
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 9
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 7
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 23
+    }
+   ],
+   "bbox": [
+    0.1299,
+    0.0547,
+    0.7461,
+    0.8838
+   ]
+  },
+  {
+   "id": 6,
+   "slug": "navy-zip-up-hoodie",
+   "sku": "HOD-001",
+   "name": {
+    "en": "Navy Zip-Up Hoodie",
+    "ar": "هودي كحلي بسحاب"
+   },
+   "description": {
+    "en": "Full-zip hoodie in heavyweight cotton-fleece with kangaroo pocket and drawcord hood.",
+    "ar": "هودي بسحاب كامل من قطن-فليس ثقيل مع جيب أمامي وغطاء برباط."
+   },
+   "longDescription": {
+    "en": "<p>Full-zip hoodie in heavyweight cotton-fleece with kangaroo pocket and drawcord hood.</p><h3>Benefits</h3><ul><li>Brushed fleece interior that traps warmth close to the body.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: Hoodies & Sweatshirts</li><li>Reference: HOD-001</li><li>Approximate weight: 0.85 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>هودي بسحاب كامل من قطن-فليس ثقيل مع جيب أمامي وغطاء برباط.</p><h3>المميزات</h3><ul><li>بطانة صوفية مصقولة تحتفظ بالدفء قرب الجسم.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: هوديز وسويتشرت</li><li>الرقم المرجعي: HOD-001</li><li>الوزن التقريبي: 0.85 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 79,
+   "compareAtPrice": 99,
+   "categoryId": 2,
+   "stock": 65,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "hoodie",
+    "zip-up",
+    "fleece",
+    "navy"
+   ],
+   "rating": 3.73,
+   "reviewCount": 11,
+   "createdAt": "2026-08-28T13:03:36.000Z",
+   "image": "/assets/products/a972d6af-a478-4196-a552-41173ddfcf55.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 10
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 6
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 21
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 12
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 11
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 19
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 16
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 20
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 7
+    }
+   ],
+   "bbox": [
+    0.1738,
+    0.0742,
+    0.6553,
+    0.8877
+   ]
+  },
+  {
+   "id": 5,
+   "slug": "navy-striped-polo",
+   "sku": "TSH-005",
+   "name": {
+    "en": "Navy Striped Polo Shirt",
+    "ar": "بولو كحلي مخطط"
+   },
+   "description": {
+    "en": "Smart navy and white horizontal-striped polo with contrasting placket.",
+    "ar": "بولو أنيق بخطوط أفقية كحلية وبيضاء مع ساتر متباين."
+   },
+   "longDescription": {
+    "en": "<p>Smart navy and white horizontal-striped polo with contrasting placket.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: T-Shirts</li><li>Reference: TSH-005</li><li>Approximate weight: 0.27 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>بولو أنيق بخطوط أفقية كحلية وبيضاء مع ساتر متباين.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: تي شيرت</li><li>الرقم المرجعي: TSH-005</li><li>الوزن التقريبي: 0.27 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 49,
+   "compareAtPrice": 59,
+   "categoryId": 1,
+   "stock": 70,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "polo",
+    "striped",
+    "smart-casual",
+    "navy"
+   ],
+   "rating": 4,
+   "reviewCount": 14,
+   "createdAt": "2026-08-28T13:03:35.000Z",
+   "image": "/assets/products/b672bda0-1816-4c54-aa74-e19d1e58ba06.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 37
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 7
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 8
+    },
+    {
+     "value": "Stone",
+     "label": {
+      "en": "Stone",
+      "ar": "حجري"
+     },
+     "hex": "#a89f92",
+     "stock": 14
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 7
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 15
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 13
+    }
+   ],
+   "bbox": [
+    0.1143,
+    0.0996,
+    0.7744,
+    0.8662
+   ]
+  },
+  {
+   "id": 4,
+   "slug": "burgundy-v-neck-tee",
+   "sku": "TSH-004",
+   "name": {
+    "en": "Burgundy V-Neck Tee",
+    "ar": "تي شيرت عنابي برقبة V"
+   },
+   "description": {
+    "en": "Slim-fit V-neck in fine ribbed cotton, rich burgundy color.",
+    "ar": "تي شيرت ضيق برقبة V من القطن المضلع الناعم بلون عنابي غني."
+   },
+   "longDescription": {
+    "en": "<p>Slim-fit V-neck in fine ribbed cotton, rich burgundy color.</p><h3>Benefits</h3><ul><li>Slim cut through the body with a clean, tapered line.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: T-Shirts</li><li>Reference: TSH-004</li><li>Approximate weight: 0.2 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>تي شيرت ضيق برقبة V من القطن المضلع الناعم بلون عنابي غني.</p><h3>المميزات</h3><ul><li>قصة ضيقة عند الجسم بخط مستدق وأنيق.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: تي شيرت</li><li>الرقم المرجعي: TSH-004</li><li>الوزن التقريبي: 0.2 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 32,
+   "compareAtPrice": null,
+   "categoryId": 1,
+   "stock": 95,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "t-shirt",
+    "v-neck",
+    "slim-fit",
+    "burgundy"
+   ],
+   "rating": 3.89,
+   "reviewCount": 9,
+   "createdAt": "2026-08-28T13:03:35.000Z",
+   "image": "/assets/products/774c195c-5b24-44bf-949f-fc3b133d0a61.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 17
+    },
+    {
+     "value": "Burgundy",
+     "label": {
+      "en": "Burgundy",
+      "ar": "عنابي"
+     },
+     "hex": "#6b1f2a",
+     "stock": 23
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 8
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 39
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 12
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 6
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 10
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 17
+    }
+   ],
+   "bbox": [
+    0.0459,
+    0.1084,
+    0.9062,
+    0.8057
+   ]
+  },
+  {
+   "id": 3,
+   "slug": "oversized-heather-grey-tee",
+   "sku": "TSH-003",
+   "name": {
+    "en": "Oversized Heather Grey Tee",
+    "ar": "تي شيرت رمادي فضفاض"
+   },
+   "description": {
+    "en": "Boxy oversized fit with dropped shoulders, in heavyweight heather grey cotton.",
+    "ar": "قصة فضفاضة وكتف مسدل من قطن رمادي ثقيل."
+   },
+   "longDescription": {
+    "en": "<p>Boxy oversized fit with dropped shoulders, in heavyweight heather grey cotton.</p><h3>Benefits</h3><ul><li>Relaxed oversized cut with dropped shoulders.</li><li>Street-ready proportions that layer over anything.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: T-Shirts</li><li>Reference: TSH-003</li><li>Approximate weight: 0.28 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قصة فضفاضة وكتف مسدل من قطن رمادي ثقيل.</p><h3>المميزات</h3><ul><li>قصة فضفاضة مريحة بأكتاف مسدلة.</li><li>قصة عصرية تناسب التنسيق فوق أي قطعة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: تي شيرت</li><li>الرقم المرجعي: TSH-003</li><li>الوزن التقريبي: 0.28 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 35,
+   "compareAtPrice": null,
+   "categoryId": 1,
+   "stock": 120,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "t-shirt",
+    "oversized",
+    "streetwear",
+    "grey"
+   ],
+   "rating": 3.36,
+   "reviewCount": 11,
+   "createdAt": "2026-08-28T13:03:34.000Z",
+   "image": "/assets/products/b7806609-6c87-4293-b510-71734d82479d.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 12
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 27
+    },
+    {
+     "value": "Heather Grey",
+     "label": {
+      "en": "Heather Grey",
+      "ar": "رمادي"
+     },
+     "hex": "#9aa0a6",
+     "stock": 32
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 16
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 11
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 8
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 24
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 19
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 5
+    }
+   ],
+   "bbox": [
+    0.0684,
+    0.1201,
+    0.8613,
+    0.752
+   ]
+  },
+  {
+   "id": 2,
+   "slug": "vintage-olive-graphic-tee",
+   "sku": "TSH-002",
+   "name": {
+    "en": "Vintage Olive Graphic Tee",
+    "ar": "تي شيرت زيتي بطباعة كلاسيكية"
+   },
+   "description": {
+    "en": "Soft washed olive tee with a minimalist white mountain print across the chest.",
+    "ar": "تي شيرت زيتي مغسول وناعم مع طباعة جبال بيضاء بسيطة على الصدر."
+   },
+   "longDescription": {
+    "en": "<p>Soft washed olive tee with a minimalist white mountain print across the chest.</p><h3>Benefits</h3><ul><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: T-Shirts</li><li>Reference: TSH-002</li><li>Approximate weight: 0.22 kg</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>تي شيرت زيتي مغسول وناعم مع طباعة جبال بيضاء بسيطة على الصدر.</p><h3>المميزات</h3><ul><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: تي شيرت</li><li>الرقم المرجعي: TSH-002</li><li>الوزن التقريبي: 0.22 كجم</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 39,
+   "compareAtPrice": null,
+   "categoryId": 1,
+   "stock": 80,
+   "featured": false,
+   "bestSeller": false,
+   "tags": [
+    "t-shirt",
+    "graphic",
+    "olive",
+    "vintage"
+   ],
+   "rating": 4.5,
+   "reviewCount": 10,
+   "createdAt": "2026-08-28T13:03:33.000Z",
+   "image": "/assets/products/e0b98d80-9aaf-46bc-a6e0-a6750f92bfcd.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 24
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 26
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 18
+    },
+    {
+     "value": "Olive",
+     "label": {
+      "en": "Olive",
+      "ar": "زيتي"
+     },
+     "hex": "#5f6b3a",
+     "stock": 21
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 22
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 9
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 8
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 18
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 9
+    }
+   ],
+   "bbox": [
+    0.0928,
+    0.1162,
+    0.8115,
+    0.7715
+   ]
+  },
+  {
+   "id": 1,
+   "slug": "plain-white-crew-neck-t-shirt",
+   "sku": "TSH-001",
+   "name": {
+    "en": "Plain White Crew-Neck T-Shirt",
+    "ar": "تي شيرت أبيض برقبة دائرية"
+   },
+   "description": {
+    "en": "A perfect-white wardrobe essential in heavyweight 100% cotton with a clean crew neck.",
+    "ar": "قطعة أساسية بيضاء نقية من القطن الثقيل 100% برقبة دائرية أنيقة."
+   },
+   "longDescription": {
+    "en": "<p>A perfect-white wardrobe essential in heavyweight 100% cotton with a clean crew neck.</p><h3>Benefits</h3><ul><li>Breathable 100% cotton that stays soft wash after wash.</li><li>Reinforced seams and finished edges throughout.</li><li>Colour-fast dye that resists fading in the wash.</li></ul><h3>Product Details</h3><ul><li>Category: T-Shirts</li><li>Reference: TSH-001</li><li>Approximate weight: 0.22 kg</li><li>Primary materials: cotton</li><li>Imported. Model is 186 cm and wears size M.</li></ul><h3>Care Instructions</h3><ul><li>Machine wash cold with like colours.</li><li>Tumble dry low or hang to dry.</li><li>Warm iron if needed, do not bleach.</li></ul>",
+    "ar": "<p>قطعة أساسية بيضاء نقية من القطن الثقيل 100% برقبة دائرية أنيقة.</p><h3>المميزات</h3><ul><li>قطن 100% يسمح بمرور الهواء ويبقى ناعماً بعد كل غسلة.</li><li>خياطة معززة وحواف منتهية بعناية في كل القطعة.</li><li>صبغة ثابتة تقاوم البهتان مع الغسيل.</li></ul><h3>تفاصيل المنتج</h3><ul><li>الفئة: تي شيرت</li><li>الرقم المرجعي: TSH-001</li><li>الوزن التقريبي: 0.22 كجم</li><li>الخامات الأساسية: cotton</li><li>مستورد. طول العارض 186 سم ويرتدي مقاس M.</li></ul><h3>تعليمات العناية</h3><ul><li>يُغسل بماء بارد مع الألوان المتشابهة.</li><li>يُجفف على حرارة منخفضة أو يُنشر.</li><li>يُكوى على حرارة متوسطة عند الحاجة، ولا يُستخدم المبيّض.</li></ul>"
+   },
+   "price": 29,
+   "compareAtPrice": 39,
+   "categoryId": 1,
+   "stock": 200,
+   "featured": true,
+   "bestSeller": false,
+   "tags": [
+    "t-shirt",
+    "cotton",
+    "basics",
+    "white"
+   ],
+   "rating": 4.43,
+   "reviewCount": 7,
+   "createdAt": "2026-08-28T13:03:32.000Z",
+   "image": "/assets/products/312bc92a-d196-4f32-ba1f-8f407b833fa6.png",
+   "colors": [
+    {
+     "value": "Black",
+     "label": {
+      "en": "Black",
+      "ar": "أسود"
+     },
+     "hex": "#111111",
+     "stock": 11
+    },
+    {
+     "value": "Charcoal",
+     "label": {
+      "en": "Charcoal",
+      "ar": "فحمي"
+     },
+     "hex": "#3a3f44",
+     "stock": 15
+    },
+    {
+     "value": "Navy",
+     "label": {
+      "en": "Navy",
+      "ar": "كحلي"
+     },
+     "hex": "#1f2a44",
+     "stock": 21
+    },
+    {
+     "value": "White",
+     "label": {
+      "en": "White",
+      "ar": "أبيض"
+     },
+     "hex": "#f4f4f2",
+     "stock": 20
+    }
+   ],
+   "sizes": [
+    {
+     "type": "Size",
+     "value": "L",
+     "stock": 13
+    },
+    {
+     "type": "Size",
+     "value": "M",
+     "stock": 13
+    },
+    {
+     "type": "Size",
+     "value": "S",
+     "stock": 5
+    },
+    {
+     "type": "Size",
+     "value": "XL",
+     "stock": 12
+    },
+    {
+     "type": "Size",
+     "value": "XXL",
+     "stock": 19
+    }
+   ],
+   "bbox": [
+    0.042,
+    0.1221,
+    0.9004,
+    0.7588
+   ]
+  }
+ ],
+ "home": {
+  "pillars": [
+   "camel-wool-trench-coat",
+   "beige-linen-shirt",
+   "tan-leather-chelsea-boots"
+  ],
+  "editorialSplit": [
+   "dark-brown-leather-biker-jacket",
+   "rust-corduroy-baseball-cap"
+  ],
+  "newDrops": [
+   "forest-green-ribbed-beanie",
+   "navy-striped-polo",
+   "indigo-denim-trucker-jacket",
+   "white-high-top-canvas-sneakers",
+   "forest-green-half-zip-sweatshirt",
+   "khaki-chinos"
+  ],
+  "bestSellers": [
+   "plain-white-crew-neck-t-shirt",
+   "navy-zip-up-hoodie",
+   "dark-brown-leather-biker-jacket",
+   "slim-fit-raw-indigo-jeans",
+   "white-oxford-button-down",
+   "white-low-top-leather-sneakers",
+   "camel-wool-flat-cap",
+   "oversized-heather-grey-tee"
+  ],
+  "slider": [
+   "cream-pullover-hoodie",
+   "army-green-puffer-jacket",
+   "olive-cargo-pants",
+   "red-black-flannel-shirt",
+   "brown-suede-penny-loafers",
+   "mustard-bucket-hat"
+  ],
+  "spotlight": [
+   "vintage-olive-graphic-tee",
+   "oversized-washed-brown-hoodie",
+   "charcoal-wool-dress-trousers",
+   "navy-henley-long-sleeve",
+   "teal-five-panel-cap"
+  ]
+ }
+}

@@ -1,272 +1,299 @@
 "use client";
 
-import { ChevronDown, Minus, Plus, Ruler, Shirt, ShoppingBag, Sparkles, Truck } from "lucide-react";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import { AVATARS } from "@/lib/avatars";
-import { SLOT_OF, type GarmentKind } from "@/lib/garments";
-import { PRODUCTS, completeTheLook, productById, relatedProducts, t } from "@/lib/products";
-import { recommendSize, sizeDelta } from "@/lib/sizing";
-import { useCart, useHydrated, useProfile, useUi } from "@/lib/store";
-import { GarmentImage } from "../GarmentImage";
-import { OutfitPreview } from "../OutfitPreview";
-import { Price, Rating } from "../Price";
-import { ProductGrid } from "../ProductCard";
-import { useI18n } from "../providers/I18nProvider";
-import { SizeAdvisor } from "../SizeAdvisor";
-import { WishlistButton } from "../WishlistButton";
+import {
+  IconBrandFacebook,
+  IconBrandWhatsapp,
+  IconBrandX,
+  IconLink,
+  IconMinus,
+  IconPlus,
+  IconRefresh,
+  IconShieldCheck,
+  IconStar,
+  IconStarFilled,
+  IconTruckDelivery,
+} from "@tabler/icons-react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { categoryById, onSale, productById, relatedProducts, t } from "@/lib/catalog";
+import { useCart, useUi } from "@/lib/store";
+import { useI18n } from "../I18nProvider";
+import { Breadcrumbs } from "../shop/PromoCarousel";
+import { Button } from "../ui/Button";
+import { Reveal } from "../ui/Reveal";
+import { ProductCard, TryOnButton, WishButton, defaultVariant } from "./ProductCard";
 
-/** A neutral base so tops and bottoms don't show on a bare model in the gallery. */
-function galleryOutfit(kind: GarmentKind, color: string) {
-  const slot = SLOT_OF[kind];
-  const pieces: { kind: GarmentKind; color: string }[] = [{ kind, color }];
-  if (slot === "top" || slot === "outer") pieces.unshift({ kind: "pants", color: "#3b3f45" });
-  if (slot === "bottom") pieces.push({ kind: "tee", color: "#ece8e1" });
-  if (slot === "outer") pieces.splice(1, 0, { kind: "tee", color: "#ece8e1" });
-  return pieces;
+function Stars({ value, size = 18 }: { value: number; size?: number }) {
+  return (
+    <span className="flex items-center gap-0.5" aria-label={`${value} / 5`}>
+      {[1, 2, 3, 4, 5].map((n) =>
+        value >= n - 0.25 ? (
+          <IconStarFilled key={n} size={size} className="text-[var(--primaryColor)]" />
+        ) : (
+          <IconStar key={n} size={size} stroke={1.4} className="text-[var(--text-muted)]/50" />
+        ),
+      )}
+    </span>
+  );
 }
 
-export function ProductDetail({ productId }: { productId: string }) {
+/** Square product shot that magnifies under the pointer. */
+function Zoomable({ src, alt }: { src: string; alt: string }) {
+  const [origin, setOrigin] = useState<string | null>(null);
+  return (
+    <div
+      className="relative h-full w-full cursor-zoom-in overflow-hidden"
+      onPointerMove={(e) => {
+        if (e.pointerType !== "mouse") return;
+        const r = e.currentTarget.getBoundingClientRect();
+        setOrigin(`${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`);
+      }}
+      onPointerLeave={() => setOrigin(null)}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        priority
+        sizes="(max-width: 1024px) 90vw, 540px"
+        className="object-contain p-8 transition-transform duration-300 ease-out"
+        style={{ transform: origin ? "scale(1.7)" : "scale(1)", transformOrigin: origin ?? "center" }}
+      />
+    </div>
+  );
+}
+
+export function ProductDetail({ productId }: { productId: number }) {
   const { d, f, lang, href, price } = useI18n();
-  const sp = useSearchParams();
+  const router = useRouter();
   const p = productById(productId)!;
-  const [color, setColor] = useState(p.colors.find((c) => c.hex === sp.get("color")) ?? p.colors[0]);
-  const [size, setSize] = useState<string | null>(null);
-  const [qty, setQty] = useState(1);
-  const [view, setView] = useState(0);
-  const [advisor, setAdvisor] = useState(false);
-  const [sizeError, setSizeError] = useState(false);
-  const [open, setOpen] = useState<string | null>("details");
-  const hydrated = useHydrated();
   const add = useCart((s) => s.add);
-  const setCartOpen = useUi((s) => s.setCartOpen);
   const showToast = useUi((s) => s.showToast);
-  const measurements = useProfile((s) => s.measurements);
-  const recent = useProfile((s) => s.recent);
-  const markViewed = useProfile((s) => s.view);
-
-  useEffect(() => markViewed(p.id), [p.id, markViewed]);
-
-  const rec = hydrated && measurements ? recommendSize(p.sizes, measurements) : null;
-  const delta = size && hydrated ? sizeDelta(p.sizes, size, measurements) : 0;
+  const def = defaultVariant(p);
+  const [color, setColor] = useState(def.color);
+  const [size, setSize] = useState(def.size);
+  const [qty, setQty] = useState(1);
+  const [tab, setTab] = useState<"description" | "reviews">("description");
+  const cat = categoryById(p.categoryId);
   const name = t(p.name, lang);
-  const off = p.compareAt ? Math.round((1 - p.price / p.compareAt) * 100) : 0;
-  const recentProducts = hydrated
-    ? recent.filter((id) => id !== p.id).map(productById).filter((x): x is (typeof PRODUCTS)[number] => !!x).slice(0, 4)
-    : [];
-  const views = [
-    { key: "flat", el: <GarmentImage kind={p.kind} color={color.hex} alt={name} className="size-full object-contain" /> },
-    ...AVATARS.slice(0, 3).map((a) => ({
-      key: a.id,
-      el: <OutfitPreview avatar={a} pieces={galleryOutfit(p.kind, color.hex)} className="size-full" label={`${name} — ${a.name[lang]}`} />,
-    })),
-  ];
+  const colorLabel = p.colors.find((c) => c.value === color);
+  const shareUrl = typeof window === "undefined" ? "" : window.location.href;
 
   const addToCart = () => {
-    if (!size) {
-      setSizeError(true);
-      return;
-    }
-    add(p.id, color.hex, size, qty);
+    add(p.id, { color, size, qty });
     showToast(d.product.added);
-    setCartOpen(true);
   };
 
-  const sections = [
-    { id: "details", title: d.product.details, body: t(p.description, lang) },
-    { id: "materials", title: d.product.materials, body: t(p.material, lang) },
-    { id: "shipping", title: d.product.shipping, body: d.product.shippingText },
-  ];
-
   return (
-    <div className="container-x py-8">
-      <nav className="mb-6 text-sm text-fg-muted" aria-label="Breadcrumb">
-        <Link href={href("/")} className="hover:text-fg">{d.nav.home}</Link>
-        <span className="mx-2">/</span>
-        <Link href={href(`/shop?category=${p.category}`)} className="hover:text-fg">{d.category[p.category]}</Link>
-        <span className="mx-2">/</span>
-        <span className="text-fg">{name}</span>
-      </nav>
+    <div className="mx-auto max-w-[1256px] px-4 pb-16 pt-8 md:px-8">
+      <Breadcrumbs items={[{ label: d.nav.shop, href: href("/shop") }, ...(cat ? [{ label: t(cat.name, lang), href: href(`/shop?category=${cat.slug}`) }] : []), { label: name }]} />
+      <div className="rounded-[2rem] bg-[var(--surface-elevated)] p-4 sm:p-8 md:p-16">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="relative aspect-square overflow-hidden rounded-[1.5rem] bg-[var(--background)] lg:sticky lg:top-24 lg:self-start"
+          >
+            <Zoomable src={p.image} alt={name} />
+            <div className="absolute start-5 top-5 z-10 flex flex-col gap-3">
+              <WishButton product={p} className="!h-11 !w-11 bg-[var(--surface-elevated)] shadow-sm" />
+              <TryOnButton product={p} className="!h-11 !w-11 !opacity-100 shadow-sm" />
+            </div>
+          </motion.div>
 
-      <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-        {/* Gallery */}
-        <div className="flex gap-4 max-sm:flex-col-reverse">
-          <div className="flex gap-3 sm:flex-col">
-            {views.map((v, i) => (
-              <button
-                key={v.key}
-                onClick={() => setView(i)}
-                aria-label={`${i + 1}`}
-                aria-pressed={view === i}
-                className="size-20 overflow-hidden rounded-xl bg-muted ring-offset-2 ring-offset-bg aria-pressed:ring-2 aria-pressed:ring-fg"
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}>
+            <div className="flex items-start justify-between gap-4">
+              <div className="min-w-0">
+                {cat && <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent-text)] rtl:tracking-normal">{t(cat.name, lang)}</p>}
+                <h1 className="mt-3 max-w-md text-3xl font-semibold leading-[1.1] text-[var(--text)] sm:text-[2.25rem]">{name}</h1>
+              </div>
+              <div className="flex shrink-0 items-center gap-1.5 text-xs text-[var(--text-muted)]">
+                <span className="me-1 hidden sm:inline">{d.product.shareOn}</span>
+                {[
+                  { Icon: IconBrandFacebook, url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, label: "Facebook" },
+                  { Icon: IconBrandX, url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(name)}`, label: "X" },
+                  { Icon: IconBrandWhatsapp, url: `https://wa.me/?text=${encodeURIComponent(`${name} ${shareUrl}`)}`, label: "WhatsApp" },
+                ].map(({ Icon, url, label }) => (
+                  <a key={label} href={url} target="_blank" rel="noreferrer" aria-label={label} className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] text-[var(--text)] transition-colors hover:border-[var(--primaryColor)] hover:text-[var(--primaryColor)]">
+                    <Icon size={14} stroke={1.6} />
+                  </a>
+                ))}
+                <button
+                  onClick={() => {
+                    navigator.clipboard?.writeText(window.location.href);
+                    showToast(d.product.copied);
+                  }}
+                  aria-label="Copy link"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] text-[var(--text)] transition-colors hover:border-[var(--primaryColor)] hover:text-[var(--primaryColor)]"
+                >
+                  <IconLink size={14} stroke={1.6} />
+                </button>
+              </div>
+            </div>
+            <p className="mt-6 text-[15px] text-[var(--text-muted)]">{t(p.description, lang)}</p>
+            <div className="mt-5 flex items-center gap-3">
+              <Stars value={p.rating} />
+              <button onClick={() => setTab("reviews")} className="text-sm text-[var(--text-muted)] hover:text-[var(--text)]">
+                {f(d.product.reviewsCount, { n: p.reviewCount })}
+              </button>
+            </div>
+
+            <div className="my-6 h-px bg-[var(--border)]" />
+            <div className="flex items-baseline gap-3">
+              <span className="text-[2.25rem] font-semibold text-[var(--text)]">{price(p.price, true)}</span>
+              {onSale(p) && <span className="text-lg text-[var(--text-muted)] line-through">{price(p.compareAtPrice!, true)}</span>}
+            </div>
+            <p className="text-xs text-[var(--text-muted)]">{d.product.taxes}</p>
+            <div className="my-6 h-px bg-[var(--border)]" />
+
+            {p.colors.length > 0 && (
+              <div>
+                <p className="text-sm font-medium text-[var(--text)]">
+                  {d.product.chooseColor} <span className="ms-1 font-normal text-[var(--text-muted)]">{colorLabel && t(colorLabel.label, lang)}</span>
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2.5" role="radiogroup" aria-label={d.product.chooseColor}>
+                  {p.colors.map((c) => (
+                    <button
+                      key={c.value}
+                      role="radio"
+                      aria-checked={c.value === color}
+                      aria-label={t(c.label, lang)}
+                      title={t(c.label, lang)}
+                      disabled={c.stock === 0}
+                      onClick={() => setColor(c.value)}
+                      className="h-10 w-10 rounded-full border border-black/10 ring-offset-2 ring-offset-[var(--surface-elevated)] transition-transform hover:scale-110 disabled:opacity-30 aria-checked:ring-2 aria-checked:ring-[var(--primaryColor)]"
+                      style={{ background: c.hex }}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+            {p.sizes.length > 0 && (
+              <div className="mt-6">
+                <p className="text-sm font-medium text-[var(--text)]">{d.product.selectSize}</p>
+                <div className="mt-3 flex flex-wrap gap-2" role="radiogroup" aria-label={d.product.selectSize}>
+                  {p.sizes.map((s) => (
+                    <button
+                      key={s.value}
+                      role="radio"
+                      aria-checked={s.value === size}
+                      disabled={s.stock === 0}
+                      onClick={() => setSize(s.value)}
+                      className="flex h-11 min-w-11 items-center justify-center rounded-full border border-[var(--border)] px-3 text-sm font-medium text-[var(--text)] transition-colors hover:border-[var(--text-muted)] disabled:cursor-not-allowed disabled:text-[var(--text-muted)]/50 disabled:line-through aria-checked:border-[var(--primaryColor)] aria-checked:text-[var(--primaryColor)]"
+                    >
+                      {s.value}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+            <div className="my-6 h-px bg-[var(--border)]" />
+
+            <div className="flex flex-wrap items-center gap-5">
+              <div className="flex h-[3.25rem] items-center rounded-full border border-[var(--border)] bg-[var(--background)]">
+                <button onClick={() => setQty((q) => Math.max(1, q - 1))} className="flex h-full w-12 items-center justify-center text-[var(--text-muted)] hover:text-[var(--text)]" aria-label="-">
+                  <IconMinus size={16} />
+                </button>
+                <span className="w-10 text-center tabular-nums" aria-live="polite">
+                  {qty}
+                </span>
+                <button onClick={() => setQty((q) => Math.min(p.stock || 99, q + 1))} className="flex h-full w-12 items-center justify-center text-[var(--text-muted)] hover:text-[var(--text)]" aria-label="+">
+                  <IconPlus size={16} />
+                </button>
+              </div>
+              {p.stock > 0 && p.stock <= 20 ? (
+                <div>
+                  <p className="text-sm font-semibold text-[var(--accent-text)]">{f(d.product.onlyLeft, { n: p.stock })}</p>
+                  <p className="text-xs text-[var(--text-muted)]">{d.product.dontMiss}</p>
+                </div>
+              ) : (
+                <p className="text-sm text-[var(--success)]">{p.stock > 0 ? d.product.inStock : d.product.outOfStock}</p>
+              )}
+            </div>
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              <Button
+                size="lg"
+                className="h-[3.25rem]"
+                disabled={p.stock === 0}
+                onClick={() => {
+                  add(p.id, { color, size, qty });
+                  router.push(href("/checkout"));
+                }}
               >
-                {v.el}
+                {d.product.buyNow}
+              </Button>
+              <Button size="lg" variant="outline" className="h-[3.25rem]" disabled={p.stock === 0} onClick={addToCart} data-testid="add-to-cart">
+                {d.product.addToCart}
+              </Button>
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-[var(--text-muted)]">
+              {[IconTruckDelivery, IconRefresh, IconShieldCheck].map((Icon, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <Icon size={15} stroke={1.6} className="text-[var(--primaryColor)]" />
+                  {d.product.perks[i]}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+
+        <div className="mt-16">
+          <div className="flex gap-2 border-b border-[var(--border)]" role="tablist">
+            {(["description", "reviews"] as const).map((k) => (
+              <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)} className={`relative px-3 pb-3 text-[15px] ${tab === k ? "text-[var(--text)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}>
+                {k === "description" ? d.product.description : d.product.reviews}
+                {k === "reviews" && <span className="ms-2 rounded-full bg-[var(--surface-hover)] px-1.5 py-0.5 text-[11px]">{p.reviewCount}</span>}
+                {tab === k && <motion.span layoutId="pdp-tab" className="absolute inset-x-0 -bottom-px h-0.5 bg-[var(--primaryColor)]" />}
               </button>
             ))}
           </div>
-          <div className="relative aspect-[4/5] flex-1 overflow-hidden rounded-3xl bg-muted">
-            {views[view].el}
-            {off > 0 && (
-              <span className="absolute start-4 top-4 rounded-full bg-accent px-3 py-1 text-sm font-semibold text-accent-fg">{f(d.product.sale, { n: off })}</span>
-            )}
-            <Link
-              href={href(`/fitting-room?product=${p.slug}&color=${encodeURIComponent(color.hex)}${size ? `&size=${size}` : ""}`)}
-              className="btn absolute bottom-4 end-4 bg-surface/95 shadow-md backdrop-blur hover:bg-surface"
-            >
-              <Sparkles className="size-4 text-accent" />
-              {d.product.tryOn}
-            </Link>
-          </div>
+          {tab === "description" ? (
+            <div className="prose-product mt-8">
+              <h3 className="!mt-0">{d.product.productDescription}</h3>
+              <div dangerouslySetInnerHTML={{ __html: t(p.longDescription, lang) }} />
+            </div>
+          ) : (
+            <div className="mt-8 flex flex-col gap-8 sm:flex-row sm:items-center">
+              <div className="text-center sm:w-48">
+                <p className="text-5xl font-semibold">{p.rating.toFixed(1)}</p>
+                <div className="mt-2 flex justify-center">
+                  <Stars value={p.rating} />
+                </div>
+                <p className="mt-2 text-sm text-[var(--text-muted)]">{f(d.product.basedOn, { n: p.reviewCount })}</p>
+              </div>
+              <div className="flex-1 space-y-2">
+                {[5, 4, 3, 2, 1].map((star) => {
+                  // Spread of ratings consistent with the average.
+                  const w = Math.max(0, 1 - Math.abs(star - p.rating) / 2.2);
+                  return (
+                    <div key={star} className="flex items-center gap-3 text-sm">
+                      <span className="w-3 text-[var(--text-muted)]">{star}</span>
+                      <div className="h-2 flex-1 overflow-hidden rounded-full bg-[var(--surface-hover)]">
+                        <motion.div className="h-full rounded-full bg-[var(--primaryColor)]" initial={{ width: 0 }} animate={{ width: `${w * 100}%` }} transition={{ duration: 0.8, delay: (5 - star) * 0.06 }} />
+                      </div>
+                    </div>
+                  );
+                })}
+                <p className="pt-2 text-sm text-[var(--text-muted)]">{d.product.noReviews}</p>
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Info */}
-        <div>
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              {p.tags.includes("new") && <p className="eyebrow mb-2 text-accent">{d.product.new}</p>}
-              <h1 className="font-display text-3xl sm:text-4xl">{name}</h1>
-            </div>
-            <WishlistButton id={p.id} className="border border-line" />
-          </div>
-          <div className="mt-3 flex flex-wrap items-center gap-4">
-            <Price price={p.price} compareAt={p.compareAt} className="text-xl" />
-            <Rating value={p.rating} count={p.reviews} />
-          </div>
-
-          <div className="mt-8">
-            <p className="text-sm">
-              {d.product.color}: <span className="font-medium">{t(color.name, lang)}</span>
-            </p>
-            <div className="mt-3 flex gap-2.5" role="radiogroup" aria-label={d.product.color}>
-              {p.colors.map((c) => (
-                <button
-                  key={c.hex}
-                  role="radio"
-                  aria-checked={c.hex === color.hex}
-                  aria-label={t(c.name, lang)}
-                  onClick={() => setColor(c)}
-                  className="size-9 rounded-full border border-black/10 ring-offset-2 ring-offset-bg aria-checked:ring-2 aria-checked:ring-fg"
-                  style={{ background: c.hex }}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-8">
-            <div className="flex items-center justify-between text-sm">
-              <p>
-                {d.product.size}
-                {rec && <span className="ms-2 rounded-full bg-success/10 px-2 py-0.5 text-xs font-medium text-success">{f(d.product.recommended, { size: rec.size })}</span>}
-              </p>
-              <button className="inline-flex items-center gap-1.5 text-fg-muted underline-offset-4 hover:text-fg hover:underline" onClick={() => setAdvisor(true)}>
-                <Ruler className="size-4" />
-                {rec ? d.product.sizeGuide : d.product.findSize}
-              </button>
-            </div>
-            <div className="mt-3 grid grid-cols-6 gap-2" role="radiogroup" aria-label={d.product.size}>
-              {p.sizes.map((s) => (
-                <button
-                  key={s}
-                  role="radio"
-                  aria-checked={size === s}
-                  onClick={() => {
-                    setSize(s);
-                    setSizeError(false);
-                  }}
-                  className={`relative h-11 rounded-xl border text-sm transition aria-checked:border-fg aria-checked:bg-primary aria-checked:text-primary-fg ${
-                    sizeError ? "border-danger" : "border-line hover:border-fg"
-                  }`}
-                >
-                  {s}
-                  {rec?.size === s && <span className="absolute -top-1 end-1 size-2 rounded-full bg-success" />}
-                </button>
-              ))}
-            </div>
-            {sizeError && <p className="mt-2 text-sm text-danger" role="alert">{d.product.selectSize}</p>}
-            {size && measurements && hydrated && (
-              <p className={`mt-2 text-sm ${delta === 0 ? "text-success" : "text-fg-muted"}`}>
-                {delta < 0 ? d.size.tight : delta > 0 ? d.size.loose : d.size.perfect}
-              </p>
-            )}
-          </div>
-
-          <div className="mt-8 flex gap-3">
-            <div className="inline-flex h-12 items-center rounded-full border border-line">
-              <button className="icon-btn" onClick={() => setQty((q) => Math.max(1, q - 1))} aria-label="-">
-                <Minus className="size-4" />
-              </button>
-              <span className="w-8 text-center tabular-nums" aria-label={d.product.quantity}>{qty}</span>
-              <button className="icon-btn" onClick={() => setQty((q) => Math.min(10, q + 1))} aria-label="+">
-                <Plus className="size-4" />
-              </button>
-            </div>
-            <button className="btn-primary h-12 flex-1" onClick={addToCart} data-testid="add-to-cart">
-              <ShoppingBag className="size-4" />
-              {d.product.addToCart} · {price(p.price * qty)}
-            </button>
-          </div>
-
-          <Link
-            href={href(`/fitting-room?product=${p.slug}&color=${encodeURIComponent(color.hex)}${size ? `&size=${size}` : ""}`)}
-            className="mt-3 flex items-center gap-4 rounded-2xl border border-accent/40 bg-accent/5 p-4 transition hover:bg-accent/10"
-            data-testid="try-on-link"
-          >
-            <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-accent text-accent-fg">
-              <Shirt className="size-5" />
-            </span>
-            <span className="flex-1">
-              <span className="block font-semibold">{d.product.tryOn}</span>
-              <span className="block text-sm text-fg-muted">{d.product.tryOnHint}</span>
-            </span>
-          </Link>
-
-          <p className="mt-6 flex items-center gap-2 text-sm text-fg-muted">
-            <Truck className="size-4" /> {d.product.inStock}
-          </p>
-
-          <div className="mt-8 divide-y divide-line border-y border-line">
-            {sections.map((s) => (
-              <div key={s.id}>
-                <button
-                  className="flex w-full items-center justify-between py-4 text-start font-medium"
-                  aria-expanded={open === s.id}
-                  onClick={() => setOpen(open === s.id ? null : s.id)}
-                >
-                  {s.title}
-                  <ChevronDown className={`size-4 transition ${open === s.id ? "rotate-180" : ""}`} />
-                </button>
-                {open === s.id && <p className="pb-4 text-sm leading-relaxed text-fg-muted">{s.body}</p>}
+        <Reveal className="mt-16">
+          <h2 className="mb-8 text-2xl font-semibold text-[var(--text)]">{d.product.youMayAlsoLike}</h2>
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            {relatedProducts(p).map((r, i) => (
+              <div key={r.id} className="rounded-[1.5rem] shadow-[0_4px_24px_-12px_rgba(16,16,20,0.18)]">
+                <ProductCard product={r} index={i} decimals />
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
-
-      <section className="mt-20">
-        <h2 className="mb-8 font-display text-3xl">{d.product.completeLook}</h2>
-        <ProductGrid products={completeTheLook(p)} />
-      </section>
-      <section className="mt-20">
-        <h2 className="mb-8 font-display text-3xl">{d.product.related}</h2>
-        <ProductGrid products={relatedProducts(p)} />
-      </section>
-      {recentProducts.length > 0 && (
-        <section className="mt-20">
-          <h2 className="mb-8 font-display text-3xl">{d.product.recentlyViewed}</h2>
-          <ProductGrid products={recentProducts} />
-        </section>
-      )}
-
-      <SizeAdvisor
-        open={advisor}
-        onClose={() => setAdvisor(false)}
-        sizes={p.sizes}
-        onPick={(s) => {
-          setSize(s);
-          setSizeError(false);
-        }}
-      />
     </div>
   );
 }

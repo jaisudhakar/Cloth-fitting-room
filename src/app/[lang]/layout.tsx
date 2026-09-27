@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { Fraunces, IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
+import { IBM_Plex_Sans_Arabic, Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
-import { CartDrawer } from "@/components/CartDrawer";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { SearchDialog } from "@/components/SearchDialog";
-import { Toast } from "@/components/Toast";
-import { I18nProvider } from "@/components/providers/I18nProvider";
+import { I18nProvider } from "@/components/I18nProvider";
+import { FittingRoom } from "@/components/fitting/FittingRoom";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
+import { SearchDialog } from "@/components/layout/SearchDialog";
+import { Toast } from "@/components/layout/Toast";
 import { LOCALES, dirOf, getDictionary, hasLocale } from "@/lib/i18n";
 import "../globals.css";
 
-const body = Inter({ subsets: ["latin"], variable: "--font-body" });
-const heading = Fraunces({ subsets: ["latin"], variable: "--font-heading" });
-const arabic = IBM_Plex_Sans_Arabic({ subsets: ["arabic"], weight: ["400", "500", "600", "700"], variable: "--font-arabic" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", weight: ["200", "300", "400", "500", "600", "700", "800"], style: ["normal", "italic"] });
+const plexArabic = IBM_Plex_Sans_Arabic({ subsets: ["arabic"], variable: "--font-plex-arabic", weight: ["200", "300", "400", "600", "700"] });
 
 export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
@@ -22,35 +21,34 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const d = getDictionary(lang);
-  return {
-    title: { default: `${d.brand} — ${d.fitting.title}`, template: `%s · ${d.brand}` },
-    description: d.home.heroText,
-  };
+  return { title: { default: `${d.brand} — ${d.home.heroTitle1} ${d.home.heroTitle2}`, template: `%s · ${d.brand}` }, description: d.footer.about };
 }
 
-// Runs before paint so the saved theme never flashes.
-const themeScript = `try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark")}catch(e){}`;
+// Applied before paint so the saved theme never flashes.
+const themeScript = `try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.classList.add("dark")}catch(e){}`;
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = getDictionary(lang);
+  const d = getDictionary(lang);
   return (
-    <html
-      lang={lang}
-      dir={dirOf(lang)}
-      suppressHydrationWarning
-      className={`${body.variable} ${heading.variable} ${arabic.variable} h-full antialiased`}
-    >
+    <html lang={lang} dir={dirOf(lang)} suppressHydrationWarning className={`${jakarta.variable} ${plexArabic.variable} antialiased`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="flex min-h-full flex-col font-sans">
-        <I18nProvider lang={lang} dict={dict}>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <CartDrawer />
+      <body className="min-h-screen overflow-x-hidden font-sans">
+        <I18nProvider lang={lang} dict={d}>
+          <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-white focus:p-4 focus:text-black">
+            {d.skip}
+          </a>
+          <div className="flex min-h-screen flex-col bg-[var(--background)]">
+            <Header />
+            <main id="main-content" className="flex-1 pt-20">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          <FittingRoom />
           <SearchDialog />
           <Toast />
         </I18nProvider>

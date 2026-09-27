@@ -1,38 +1,52 @@
-# Vestra — clothing store with a virtual fitting room
+# STORE — clothing storefront with a fitting room
 
-A Next.js storefront modelled on the [Aniq UI e-commerce clothes template](https://ecommerce-clothes-1.aniq-ui.com/en),
-built around a **“Try this on”** virtual fitting room.
+A Next.js 16 rebuild of the [Aniq UI e-commerce clothes template](https://ecommerce-clothes-1.aniq-ui.com/en):
+same layout, copy (English + Arabic), colours, fonts, imagery and animations, with a working
+**"Try it on"** fitting room.
+
+> The design, copy and photography belong to the Aniq UI template. Use them only under your
+> template licence. The images are **not committed**: `npm install` downloads them into
+> `public/assets/` (git-ignored). Keep this repository private if you commit anything from
+> the template.
 
 ## Features
 
-**Virtual fitting room** (`/[lang]/fitting-room`)
-- **Try this on** from any product card or product page opens the fitting room with that piece on.
-- **Who's trying on:** four built-in models, an uploaded full-body photo, a photo from the camera (with a 3-second timer), or a **live mirror** that tracks you through the webcam.
-- **Automatic fit:** in-browser pose detection ([MediaPipe Pose Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)) finds shoulders, hips and ankles, then scales, rotates and places each garment on the body. If no body is found, garments drop into a default position to adjust by hand.
-- **Layering:** one garment per slot (top, bottom, dress, outerwear). A dress replaces separates, and vice versa.
-- **Adjust:** drag a garment on the model, or use the size / length / rotate / opacity sliders. Arrow keys nudge the selected garment and Delete removes it.
-- **Size-aware preview:** height, weight and fit preference give a recommended size. Choosing a smaller or larger size visibly narrows or widens the garment and flags it as tight or loose.
-- **Hold to compare** before/after, **save photo** (PNG), and **add the whole look to the bag**.
-- **Optional photoreal AI try-on** via the FASHN API (set `FASHN_API_KEY`). The key stays on the server (`/api/try-on`).
-- Photos are processed on-device. Nothing is uploaded unless you use AI try-on.
+**Fitting room**
+- Tap the **hanger** on any product card or product page to put the piece on the mannequin.
+  There is one piece per layer (headwear, top, outerwear, bottom, footwear), and tapping again takes it off.
+- A floating **"Try it on"** button opens a draggable panel. It shows the mannequin with every pick
+  layered on it instantly, a list of your picks, a zoom view and **Start over**.
+- **Add your API key → Draw the look**: sends the mannequin plus your picks to Google's Gemini
+  image model (`gemini-3.1-flash-image`, falling back to `gemini-2.5-flash-image`) and shows a photoreal
+  render. As in the original demo, each shopper uses their own Google AI key. It is kept in their browser
+  and sent only with their draw requests. Set `GEMINI_API_KEY` to provide a server key instead.
+  Image generation is a paid Google feature, so a free-tier key is refused.
 
 **Store**
-- Home: hero, categories, new arrivals, best sellers, promo banner, newsletter.
-- Shop with filters (category, gender, size, colour, price, sale), sorting and search (also <kbd>Ctrl/⌘ K</kbd>).
-- Product page: colour and size selection, size advisor and chart, on-model gallery, "complete the look", related and recently viewed items.
-- Cart drawer and cart page, free-shipping progress bar, promo codes (`WELCOME10`, `FITROOM15`).
-- Wishlist.
-- Checkout with validation (card numbers checked with the Luhn algorithm; try `4242 4242 4242 4242`), standard or express shipping, card or cash on delivery, and an order confirmation page.
-- English and Arabic with full right-to-left layout, light and dark theme, responsive down to phone width.
-- Cart, wishlist, measurements, orders and the fitting-room outfit are saved in the browser (`localStorage`).
+- **Home:** hero, service strip, "Three quiet obsessions", editorial split, categories, new drops,
+  offer banner, best sellers, "Shop the Collection" slider, "A Closer Look" scroll spotlight,
+  reviews and closing banner.
+- **Header:** mega menus, EN/AR switcher (full RTL), light/dark theme, search (<kbd>Ctrl/⌘ K</kbd>),
+  account menu and bag dropdown.
+- **Shop:** promo carousel, category/price/highlight filters, search, five sort orders, pagination.
+- **Product page:** image magnifier, colours, sizes (out-of-stock sizes disabled), quantity,
+  Buy Now / Add to Cart, share links, Description/Reviews tabs, related products.
+- **Other pages:** categories, cart (promo code `WELCOME10`), checkout (card numbers are Luhn-checked;
+  demo card `4242 4242 4242 4242`), wishlist, account, order tracking, about, contact, FAQ.
 
-This is a demo store: no real payment is taken. Product imagery is generated as SVG, and garments share a body coordinate system with the models (see `src/lib/body.ts`). That lets one drawing serve as both the catalogue image and a transparent try-on layer.
+**Animations**
+- **On load and scroll:** hero zoom and parallax; sections fade and slide in as they enter the view.
+- **Home showpieces:** the "Three quiet obsessions" panels expand on hover; the collection slider
+  auto-advances; the spotlight is pinned while two columns swap pieces in opposite directions.
+- **Product cards:** heart fill, hanger fade-in, orange corner that grows behind the cart button.
+- **Navigation and panels:** mega-menu open/close, spring-animated panels and dialogs, button ripples.
+- Everything respects `prefers-reduced-motion`.
 
 ## Getting started
 
 ```bash
-npm install      # also copies MediaPipe's WASM runtime into public/mediapipe
-npm run dev      # http://localhost:3000 → redirects to /en
+npm install          # also downloads the storefront images (npm run assets)
+npm run dev          # http://localhost:3000 → /en
 ```
 
 ```bash
@@ -41,23 +55,15 @@ npm run lint
 npm run typecheck
 ```
 
-Camera features need a secure context: `localhost` or HTTPS.
-
-## Project layout
+## Layout
 
 ```
-src/
-  app/[lang]/           pages (home, shop, product/[slug], fitting-room, cart, wishlist, checkout)
-  app/api/try-on/       optional AI try-on proxy (FASHN)
-  components/fitting/   fitting room: stage, camera capture, AI panel
-  lib/body.ts           reference body joints shared by garments and models
-  lib/garments.ts       procedural garment SVGs
-  lib/avatars.ts        built-in fitting-room models
-  lib/fit.ts            maps a garment onto detected or known joints
-  lib/pose.ts           MediaPipe pose detection (image + live video)
-  lib/sizing.ts         size recommendation
-  lib/products.ts       catalogue (EN/AR)
-  lib/i18n.ts           dictionaries, locale helpers
-  lib/store.ts          cart, wishlist, profile, orders, outfit (zustand, persisted)
-  proxy.ts              redirects / to the preferred locale
+src/app/[lang]/            pages (home, shop, products/[slug], categories, cart, checkout, account, …)
+src/app/api/fitting-room/  "Draw the look" → Gemini image model
+src/components/home/       home page sections
+src/components/fitting/    fitting room: trigger, panel, mannequin canvas, API-key dialog
+src/components/layout/     header, mega menu, bag, search, footer
+src/data/catalog.json      35 products, 7 categories, home-section picks (EN/AR)
+src/lib/                   catalog helpers, i18n dictionaries, persisted stores
+scripts/fetch-assets.mjs   image downloader (manifest in scripts/assets-manifest.json)
 ```

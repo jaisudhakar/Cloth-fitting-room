@@ -22,11 +22,18 @@ same layout, copy (English + Arabic), colours, fonts, imagery and animations, wi
   found, garments use standard proportions and the panel says so.
 - **Full view**: a large editor where you tap a piece to drag it, resize it, reset the fit, change or
   remove the photo, and **Save image** (PNG of exactly what's on screen).
-- **Add your API key → Draw the look**: sends the mannequin, or the customer's photo, plus the picks to
-  Google's Gemini image model (`gemini-3.1-flash-image`, falling back to `gemini-2.5-flash-image`). For a
-  customer photo it keeps their face, body, pose and background and redraws only the clothes. Each
-  shopper uses their own Google AI key, kept in their browser; set `GEMINI_API_KEY` to provide a server
-  key instead. Image generation is a paid Google feature, so a free-tier key is refused.
+- **Exact look (automatic)**: with the store's `GEMINI_API_KEY` set in `.env.local`, every outfit is
+  rendered photorealistically about a second after the last piece is added, by Google's Gemini image
+  model (`gemini-3.1-flash-image`, falling back to `gemini-2.5-flash-image`). This works on the mannequin
+  or the customer's photo. The instant preview stays visible meanwhile. The prompt requires each garment
+  to match its product photo exactly (colour, fabric, prints, logos, buttons, pockets, length); on a
+  customer photo it keeps their face, body, pose and background. **Preview / Exact look** switches views
+  and **Redraw** asks for a new render.
+- **Cost control**: mannequin looks are cached in memory and in `.cache/looks/` (shared by all visitors),
+  so each outfit is paid for once. Each visitor is limited to `TRYON_RENDERS_PER_WINDOW` (default 20)
+  fresh renders per 10 minutes on the store key. Check Google's current image pricing for your costs.
+- Without a store key, shoppers can still press **Add your API key** and use their own Google AI key,
+  as in the original demo.
 
 **Store**
 - **Home:** hero, service strip, "Three quiet obsessions", editorial split, categories, new drops,

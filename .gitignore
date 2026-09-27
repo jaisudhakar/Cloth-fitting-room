@@ -50,3 +50,6 @@ next-env.d.ts
 
 # MediaPipe runtime, copied from node_modules on install
 /public/mediapipe/
+
+# Rendered try-on looks
+/.cache/

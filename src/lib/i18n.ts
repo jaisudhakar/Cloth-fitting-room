@@ -345,6 +345,10 @@ const en = {
     save: "Save image",
     fullView: "Full view",
     selectPiece: "Select a piece to resize it.",
+    exactLook: "Exact look",
+    preview: "Preview",
+    rendering: "Rendering the exact look…",
+    redrawShort: "Redraw",
   },
   common: {
     close: "Close",
@@ -696,6 +700,10 @@ const ar: Dictionary = {
     save: "حفظ الصورة",
     fullView: "عرض كامل",
     selectPiece: "اختر قطعة لتغيير حجمها.",
+    exactLook: "الإطلالة الفعلية",
+    preview: "معاينة",
+    rendering: "جارٍ رسم الإطلالة الفعلية…",
+    redrawShort: "إعادة الرسم",
   },
   common: {
     close: "إغلاق",

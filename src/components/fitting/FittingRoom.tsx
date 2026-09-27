@@ -21,17 +21,16 @@ import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { type Layer, LAYERS, productById, t } from "@/lib/catalog";
 import { NO_ADJUST } from "@/lib/fit";
-import { loadImage, readPhoto, renderComposite, scaleImage } from "@/lib/photo";
+import { loadImage, readPhoto, renderComposite } from "@/lib/photo";
 import { detectPose, fallbackJoints, preloadPose } from "@/lib/pose";
 import { useFitting, useHydrated, useTryOn } from "@/lib/store";
 import { useI18n } from "../I18nProvider";
 import { ApiKeyDialog } from "./ApiKeyDialog";
 import { FitStage, MODEL_BASE, MODEL_IMAGE, MODEL_JOINTS, type StageItem } from "./FitStage";
+import { useLook } from "./useLook";
 
 const PANEL_W = 312;
 const PANEL_H = 540;
-
-type Look = { image: string | null; pending: boolean; error: string | null; signature: string };
 
 export function FittingRoom() {
   const hydrated = useHydrated();
@@ -123,10 +122,10 @@ function Room() {
   const base = onPhoto && photo ? photo : MODEL_BASE;
   const joints = onPhoto && photo ? photo.joints : MODEL_JOINTS;
   const adjust = adjustAll[onPhoto ? "photo" : "model"];
-  const signature = `${source}:${photo?.src.length ?? 0}:${items.map((e) => `${e.layer}:${e.product.id}`).join("|")}`;
-  const [look, setLook] = useState<Look>({ image: null, pending: false, error: null, signature: "" });
-  // A drawn look belongs to one exact outfit on one person; any change returns to the preview.
-  const drawn = look.signature === signature ? look : { image: null, pending: false, error: null, signature };
+  // The exact look renders by itself for whatever is on the mannequin or the customer.
+  const look = useLook({ items: onPhoto && !photo ? [] : items, person: onPhoto && photo ? photo : null, apiKey });
+  const [view, setView] = useState<"exact" | "preview">("exact");
+  const exact = view === "exact" ? look.image : null;
 
   // Keep the draggable panel on screen.
   const measure = useCallback(() => {
@@ -150,25 +149,6 @@ function Room() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open, keyOpen, full, setOpen]);
-
-  const draw = async () => {
-    if (!apiKey || !items.length) return;
-    setLook({ image: null, pending: true, error: null, signature });
-    try {
-      // The customer's photo goes along (downsized) so the look is drawn on them.
-      const person = onPhoto && photo ? scaleImage(await loadImage(photo.src), 1280).src : undefined;
-      const res = await fetch("/api/fitting-room", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-        body: JSON.stringify({ lang, garments: items.map((e) => e.product.slug), person }),
-      });
-      const json = (await res.json().catch(() => ({}))) as { image?: string; error?: string };
-      if (!res.ok || !json.image) throw new Error(json.error ?? `HTTP ${res.status}`);
-      setLook({ image: json.image, pending: false, error: null, signature });
-    } catch (e) {
-      setLook({ image: null, pending: false, error: e instanceof Error ? e.message : String(e), signature });
-    }
-  };
 
   const count = items.length;
   const status = onPhoto && (detecting ? { text: d.fitting.detecting, tone: "busy" } : photo ? (photo.fit === "detected" ? { text: d.fitting.detected, tone: "ok" } : { text: d.fitting.estimated, tone: "warn" }) : null);
@@ -256,24 +236,48 @@ function Room() {
               <div className="relative min-h-0 flex-1 px-5 [container-type:size]">
                 {onPhoto && !photo ? (
                   <UploadPrompt busy={detecting} error={upload.error} onPick={upload.open} />
-                ) : drawn.image ? (
-                  <div className="relative mx-auto h-full overflow-hidden rounded-2xl" style={{ aspectRatio: "3 / 4", maxWidth: "100%" }}>
+                ) : exact ? (
+                  <motion.div
+                    key={exact.length}
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="relative mx-auto overflow-hidden rounded-2xl bg-[#8e9092]"
+                    style={{ width: `min(100cqw, calc(100cqh * ${base.w / base.h}))`, aspectRatio: `${base.w} / ${base.h}` }}
+                  >
                     {/* eslint-disable-next-line @next/next/no-img-element -- data URI from the image model */}
-                    <img src={drawn.image} alt={d.fitting.rendered} className="h-full w-full object-cover" data-testid="rendered-look" />
-                    <span className="absolute start-2 top-2 rounded-full bg-[var(--primaryColor)] px-2 py-0.5 text-[10px] font-medium text-white">{d.fitting.rendered}</span>
-                    <button
-                      type="button"
-                      onClick={() => setLook((l) => ({ ...l, image: null }))}
-                      className="absolute bottom-2 left-1/2 -translate-x-1/2 rounded-full bg-black/60 px-3 py-1 text-[10px] font-medium text-white backdrop-blur hover:bg-black/75"
-                    >
-                      {d.fitting.backToPreview}
-                    </button>
-                  </div>
+                    <img src={exact} alt={d.fitting.rendered} className="h-full w-full object-cover" data-testid="rendered-look" />
+                    <span className="absolute start-2 top-2 flex items-center gap-1 rounded-full bg-[var(--primaryColor)] px-2 py-0.5 text-[10px] font-medium text-white">
+                      <IconSparkles size={11} /> {d.fitting.exactLook}
+                    </span>
+                    <div className="absolute bottom-2.5 end-2.5 flex gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() => setView("preview")}
+                        className="rounded-full bg-black/55 px-3 py-1 text-[10px] font-medium text-white backdrop-blur hover:bg-black/75"
+                        data-testid="show-preview"
+                      >
+                        {d.fitting.preview}
+                      </button>
+                      <button type="button" onClick={() => setFull(true)} aria-label={d.fitting.fullView} className="flex h-6 w-6 items-center justify-center rounded-full bg-black/55 text-white backdrop-blur hover:bg-black/75">
+                        <IconArrowsMaximize size={12} stroke={1.8} />
+                      </button>
+                    </div>
+                  </motion.div>
                 ) : (
                   <div className="relative mx-auto" style={{ width: `min(100cqw, calc(100cqh * ${base.w / base.h}))` }}>
                     <FitStage base={base} joints={joints} items={items} adjust={adjust} />
                     {status && <StatusChip {...status} />}
                     <div className="absolute bottom-2.5 end-2.5 z-[60] flex gap-1.5">
+                      {look.image && (
+                        <button
+                          type="button"
+                          onClick={() => setView("exact")}
+                          className="flex h-7 items-center gap-1 rounded-full bg-[var(--primaryColor)] px-2.5 text-[10px] font-medium text-white hover:bg-[var(--primaryColorHover)]"
+                          data-testid="show-exact"
+                        >
+                          <IconSparkles size={12} /> {d.fitting.exactLook}
+                        </button>
+                      )}
                       {onPhoto && (
                         <button type="button" onClick={upload.open} aria-label={d.fitting.changePhoto} title={d.fitting.changePhoto} className="flex h-7 w-7 items-center justify-center rounded-full bg-black/55 text-white backdrop-blur hover:bg-black/75">
                           <IconCamera size={15} stroke={1.8} />
@@ -293,15 +297,18 @@ function Room() {
                   </div>
                 )}
                 <AnimatePresence>
-                  {drawn.pending && (
+                  {look.pending && (
+                    // Non-blocking: the instant preview stays visible while the exact look renders.
                     <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      className="absolute inset-0 z-[70] mx-5 flex flex-col items-center justify-center gap-2 rounded-2xl bg-[var(--surface-elevated)]/85 backdrop-blur-sm"
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      className="pointer-events-none absolute inset-x-5 bottom-12 z-[70] flex justify-center"
+                      data-testid="rendering"
                     >
-                      <IconSparkles size={22} stroke={1.8} className="animate-pulse text-[var(--primaryColor)]" />
-                      <p className="px-6 text-center text-[11px] font-medium text-[var(--text)]">{d.fitting.drawing}</p>
+                      <span className="flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-[10px] font-medium text-white backdrop-blur">
+                        <IconSparkles size={12} className="animate-pulse text-[var(--primaryColor)]" /> {d.fitting.rendering}
+                      </span>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -331,16 +338,26 @@ function Room() {
                   </AnimatePresence>
                 </ul>
               )}
-              {(drawn.error || upload.error) && <p className="shrink-0 px-5 pt-2 text-[11px] leading-relaxed text-[var(--danger)]">{drawn.error ?? upload.error}</p>}
+              {(look.error || upload.error) && <p className="shrink-0 px-5 pt-2 text-[11px] leading-relaxed text-[var(--danger)]">{look.error ?? upload.error}</p>}
 
               <footer className="flex shrink-0 items-center justify-between gap-2 px-5 pb-5 pt-3">
-                <DrawButton apiKey={apiKey} count={count} pending={drawn.pending} hasImage={!!drawn.image} onDraw={draw} onKey={() => setKeyOpen(true)} />
+                <DrawButton
+                  canRender={look.canRender}
+                  showKey={!look.serverKey}
+                  count={count}
+                  pending={look.pending}
+                  hasImage={!!look.image}
+                  onDraw={() => {
+                    setView("exact");
+                    look.redraw();
+                  }}
+                  onKey={() => setKeyOpen(true)}
+                />
                 <button
                   type="button"
                   onClick={() => {
                     reset();
                     useTryOn.getState().resetAdjust();
-                    setLook({ image: null, pending: false, error: null, signature: "" });
                   }}
                   disabled={count === 0}
                   className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-2 py-2 text-[12px] font-medium text-[var(--accent-text)] transition-colors hover:bg-[var(--surface-hover)] disabled:pointer-events-none disabled:opacity-40"
@@ -354,7 +371,7 @@ function Room() {
         )}
       </AnimatePresence>
 
-      <AnimatePresence>{full && <FullView items={items} drawnImage={drawn.image} onClose={() => setFull(false)} onUpload={upload.open} />}</AnimatePresence>
+      <AnimatePresence>{full && <FullView items={items} drawnImage={exact} onClose={() => setFull(false)} onUpload={upload.open} />}</AnimatePresence>
       <ApiKeyDialog open={keyOpen} onClose={() => setKeyOpen(false)} />
     </>
   );
@@ -422,9 +439,25 @@ function StatusChip({ text, tone }: { text: string; tone: string }) {
   );
 }
 
-function DrawButton({ apiKey, count, pending, hasImage, onDraw, onKey }: { apiKey: string | null; count: number; pending: boolean; hasImage: boolean; onDraw: () => void; onKey: () => void }) {
+function DrawButton({
+  canRender,
+  showKey,
+  count,
+  pending,
+  hasImage,
+  onDraw,
+  onKey,
+}: {
+  canRender: boolean;
+  showKey: boolean;
+  count: number;
+  pending: boolean;
+  hasImage: boolean;
+  onDraw: () => void;
+  onKey: () => void;
+}) {
   const { d } = useI18n();
-  if (!apiKey)
+  if (!canRender)
     return (
       <button
         type="button"
@@ -447,11 +480,13 @@ function DrawButton({ apiKey, count, pending, hasImage, onDraw, onKey }: { apiKe
         data-testid="draw-look"
       >
         <IconSparkles size={14} stroke={1.8} />
-        <span className="truncate">{pending ? d.fitting.drawing : hasImage ? d.fitting.redraw : d.fitting.draw}</span>
+        <span className="truncate">{pending ? d.fitting.rendering : hasImage ? d.fitting.redraw : d.fitting.draw}</span>
       </button>
-      <button type="button" onClick={onKey} aria-label={d.fitting.changeKey} title={d.fitting.changeKey} className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--accent-text)] hover:bg-[var(--surface-hover)]">
-        <IconKey size={15} stroke={1.8} />
-      </button>
+      {showKey && (
+        <button type="button" onClick={onKey} aria-label={d.fitting.changeKey} title={d.fitting.changeKey} className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--accent-text)] hover:bg-[var(--surface-hover)]">
+          <IconKey size={15} stroke={1.8} />
+        </button>
+      )}
     </div>
   );
 }

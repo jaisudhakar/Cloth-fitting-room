@@ -3,7 +3,7 @@
 import { IconAdjustmentsHorizontal, IconChevronDown, IconSearch, IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { CATEGORIES, PRODUCTS, categoryBySlug, onSale, searchProducts, t } from "@/lib/catalog";
 import { useI18n } from "../I18nProvider";
@@ -18,7 +18,6 @@ const PRICE_MAX = Math.ceil(Math.max(...PRODUCTS.map((p) => p.price)) / 50) * 50
 export function ShopView() {
   const { d, f, lang, href } = useI18n();
   const sp = useSearchParams();
-  const router = useRouter();
   const pathname = usePathname();
   const [filtersOpen, setFiltersOpen] = useState(false);
 
@@ -32,15 +31,22 @@ export function ShopView() {
   const max = Number(sp.get("max") ?? PRICE_MAX) || PRICE_MAX;
   const page = Math.max(1, Number(sp.get("page") ?? 1) || 1);
 
+  // Filtering is entirely client-side, so filters update the URL in place
+  // (Next keeps useSearchParams in sync) instead of making a server round trip.
+  // Start from the live URL: several updates can land in one tick (Enter, then
+  // blur, then a category click) and must not overwrite each other.
   const set = (patch: Record<string, string | null>) => {
-    const next = new URLSearchParams(sp.toString());
+    const next = new URLSearchParams(window.location.search);
     for (const [k, v] of Object.entries(patch)) {
       if (v === null || v === "") next.delete(k);
       else next.set(k, v);
     }
     if (!("page" in patch)) next.delete("page");
-    router.replace(`${pathname}?${next.toString()}`, { scroll: false });
+    const qs = next.toString();
+    if (qs === window.location.search.slice(1)) return;
+    window.history.replaceState(null, "", qs ? `${pathname}?${qs}` : pathname);
   };
+  const clearAll = () => window.history.replaceState(null, "", pathname);
 
   const items = useMemo(() => {
     let list = q ? searchProducts(q) : PRODUCTS;
@@ -189,7 +195,7 @@ export function ShopView() {
           ) : (
             <div className="flex flex-col items-center gap-4 rounded-[1.5rem] bg-[var(--surface-elevated)] p-16 text-center">
               <p className="text-[var(--text-muted)]">{d.shop.empty}</p>
-              <button className="text-sm font-medium text-[var(--accent-text)] underline" onClick={() => router.replace(pathname)}>
+              <button className="text-sm font-medium text-[var(--accent-text)] underline" onClick={clearAll}>
                 {d.shop.clear}
               </button>
             </div>

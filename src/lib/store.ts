@@ -165,3 +165,49 @@ export const useUi = create<UiState>()((set) => ({
 const noop = () => () => {};
 /** True once running in the browser, so persisted state renders without hydration mismatches. */
 export const useHydrated = () => useSyncExternalStore(noop, () => true, () => false);
+
+/** Who is trying things on: the demo mannequin or the customer's own photo. */
+export type TryOnPhoto = {
+  src: string;
+  w: number;
+  h: number;
+  joints: import("./pose").Joints;
+  /** "detected" = pose found; "estimated" = fell back to standard proportions. */
+  fit: "detected" | "estimated";
+};
+
+type TryOnState = {
+  source: "model" | "photo";
+  photo: TryOnPhoto | null;
+  detecting: boolean;
+  /** Manual nudges per layer, kept separately for the mannequin and the photo. */
+  adjust: Record<"model" | "photo", Partial<Record<Layer, import("./fit").Adjust>>>;
+  setSource: (s: "model" | "photo") => void;
+  setPhoto: (p: TryOnPhoto | null) => void;
+  setDetecting: (v: boolean) => void;
+  nudge: (layer: Layer, patch: Partial<import("./fit").Adjust>) => void;
+  resetAdjust: (layer?: Layer) => void;
+};
+
+// Not persisted: a full-size photo is too big for localStorage and stays in memory only.
+export const useTryOn = create<TryOnState>()((set) => ({
+  source: "model",
+  photo: null,
+  detecting: false,
+  adjust: { model: {}, photo: {} },
+  setSource: (source) => set({ source }),
+  setPhoto: (photo) => set((s) => ({ photo, source: photo ? "photo" : s.source, adjust: { ...s.adjust, photo: {} } })),
+  setDetecting: (detecting) => set({ detecting }),
+  nudge: (layer, patch) =>
+    set((s) => {
+      const cur = s.adjust[s.source][layer] ?? { dx: 0, dy: 0, scale: 1 };
+      return { adjust: { ...s.adjust, [s.source]: { ...s.adjust[s.source], [layer]: { ...cur, ...patch } } } };
+    }),
+  resetAdjust: (layer) =>
+    set((s) => {
+      if (!layer) return { adjust: { ...s.adjust, [s.source]: {} } };
+      const next = { ...s.adjust[s.source] };
+      delete next[layer];
+      return { adjust: { ...s.adjust, [s.source]: next } };
+    }),
+}));

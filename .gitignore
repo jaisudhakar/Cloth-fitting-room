@@ -47,3 +47,6 @@ next-env.d.ts
 
 # Template imagery, downloaded by scripts/fetch-assets.mjs
 /public/assets/
+
+# MediaPipe runtime, copied from node_modules on install
+/public/mediapipe/

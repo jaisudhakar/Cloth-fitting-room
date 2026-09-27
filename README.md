@@ -12,15 +12,21 @@ same layout, copy (English + Arabic), colours, fonts, imagery and animations, wi
 ## Features
 
 **Fitting room**
-- Tap the **hanger** on any product card or product page to put the piece on the mannequin.
-  There is one piece per layer (headwear, top, outerwear, bottom, footwear), and tapping again takes it off.
-- A floating **"Try it on"** button opens a draggable panel. It shows the mannequin with every pick
-  layered on it instantly, a list of your picks, a zoom view and **Start over**.
-- **Add your API key → Draw the look**: sends the mannequin plus your picks to Google's Gemini
-  image model (`gemini-3.1-flash-image`, falling back to `gemini-2.5-flash-image`) and shows a photoreal
-  render. As in the original demo, each shopper uses their own Google AI key. It is kept in their browser
-  and sent only with their draw requests. Set `GEMINI_API_KEY` to provide a server key instead.
-  Image generation is a paid Google feature, so a free-tier key is refused.
+- Tap the **hanger** on any product card or product page to put the piece on. There is one piece per
+  layer (headwear, top, outerwear, bottom, footwear); tapping again takes it off.
+- **Model / Your photo**: try pieces on the demo mannequin, or upload a full-body photo. The photo is
+  shown whole (not cropped) and stays in the browser.
+- **Automatic fit**: pose detection ([MediaPipe Pose Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker),
+  running in the browser) finds the shoulders, hips, ankles, feet and head. Each garment is then sized
+  and placed on them, scaled to the person's shoulder width and following a tilted pose. If no person is
+  found, garments use standard proportions and the panel says so.
+- **Full view**: a large editor where you tap a piece to drag it, resize it, reset the fit, change or
+  remove the photo, and **Save image** (PNG of exactly what's on screen).
+- **Add your API key → Draw the look**: sends the mannequin, or the customer's photo, plus the picks to
+  Google's Gemini image model (`gemini-3.1-flash-image`, falling back to `gemini-2.5-flash-image`). For a
+  customer photo it keeps their face, body, pose and background and redraws only the clothes. Each
+  shopper uses their own Google AI key, kept in their browser; set `GEMINI_API_KEY` to provide a server
+  key instead. Image generation is a paid Google feature, so a free-tier key is refused.
 
 **Store**
 - **Home:** hero, service strip, "Three quiet obsessions", editorial split, categories, new drops,
@@ -45,7 +51,7 @@ same layout, copy (English + Arabic), colours, fonts, imagery and animations, wi
 ## Getting started
 
 ```bash
-npm install          # also downloads the storefront images (npm run assets)
+npm install          # also copies the pose-detection runtime and downloads the storefront images
 npm run dev          # http://localhost:3000 → /en
 ```
 

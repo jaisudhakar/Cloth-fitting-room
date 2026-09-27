@@ -1,5 +1,5 @@
 /**
- * "Draw the look": sends the mannequin photo plus the picked garments to
+ * "Draw the look": sends the mannequin (or the customer's own photo) plus the picked garments to
  * Google's Gemini image model and returns the composite.
  *
  * Like the reference demo, the shopper supplies their own Google AI key
@@ -34,22 +34,40 @@ async function inline(path: string) {
   return { inline_data: { mime_type: mime(path), data: data.toString("base64") } };
 }
 
-function prompt(garments: { name: string; layer: Layer }[]) {
+function prompt(garments: { name: string; layer: Layer }[], customer: boolean) {
+  const garmentList = [
+    garments.map((g, i) => `IMAGE ${i + 2} is ${g.name}.`).join(" "),
+    garments.map((g) => `- ${g.name}, ${WEAR[g.layer]}`).join("\n"),
+  ];
+  if (customer) {
+    return [
+      "Virtual try-on, photorealistic.",
+      "IMAGE 1 is a photo of the customer.",
+      garmentList[0],
+      "Edit IMAGE 1 so the SAME person is wearing these garments together as one outfit, fitted to their body shape, size and pose:",
+      garmentList[1],
+      "Requirements: keep the person's face, hair, skin tone, body proportions, pose, framing, camera angle, lighting and background exactly as in IMAGE 1. Replace only the clothing the new garments cover; keep everything else. Garments drape naturally over the body in 3D with realistic folds and shadows, never a flat pasted cut-out. Keep each garment's exact colour, pattern and material. Same aspect ratio as IMAGE 1. No text, watermarks or extra people.",
+    ].join("\n");
+  }
   return [
     "Virtual fitting-room composite, photorealistic studio photography.",
     "IMAGE 1 is the base figure: a matte light-grey full-body male display mannequin, frontal pose, plain grey studio backdrop.",
-    garments.map((g, i) => `IMAGE ${i + 2} is ${g.name}.`).join(" "),
+    garmentList[0],
     "Render ONE photograph of that SAME mannequin (identical body, frontal pose, camera, lighting and background) now DRESSED in these garments worn together as one outfit:",
-    garments.map((g) => `- ${g.name}, ${WEAR[g.layer]}`).join("\n"),
+    garmentList[1],
     "Requirements: full body visible from head to feet, nothing cropped. Garments wrap the body in 3D with natural folds and drape, never a flat pasted cut-out. Respect the layering order. Keep each garment's exact colour, pattern and material. Plain studio background. No text, watermarks, props or extra people. Portrait 3:4.",
   ].join("\n");
 }
+
+// Customer photos arrive as data URLs; the client downsizes them to ~1280px.
+const PHOTO = /^data:(image\/(?:jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/;
+const MAX_PHOTO_CHARS = 8_000_000;
 
 export async function POST(req: Request) {
   const key = req.headers.get("x-goog-api-key")?.trim() || process.env.GEMINI_API_KEY;
   if (!key) return Response.json({ error: "Add your Google AI key first." }, { status: 401 });
 
-  const body = (await req.json().catch(() => null)) as { garments?: unknown } | null;
+  const body = (await req.json().catch(() => null)) as { garments?: unknown; person?: unknown } | null;
   const slugs = Array.isArray(body?.garments) ? body.garments.filter((s): s is string => typeof s === "string").slice(0, 5) : [];
   const products = slugs.map(productBySlug).filter((p) => !!p);
   if (!products.length) return Response.json({ error: "Pick at least one garment." }, { status: 400 });
@@ -58,9 +76,20 @@ export async function POST(req: Request) {
     .map((p) => ({ name: p.name.en, layer: layerOf(p), image: p.image }))
     .sort((a, b) => LAYERS.indexOf(a.layer) - LAYERS.indexOf(b.layer));
 
+  let person: { inline_data: { mime_type: string; data: string } } | null = null;
+  if (body?.person !== undefined) {
+    const m = typeof body.person === "string" && body.person.length < MAX_PHOTO_CHARS ? PHOTO.exec(body.person) : null;
+    if (!m) return Response.json({ error: "That photo can't be used. Try a JPG or PNG." }, { status: 400 });
+    person = { inline_data: { mime_type: m[1], data: m[2] } };
+  }
+
   let parts;
   try {
-    parts = [{ text: prompt(garments) }, await inline(MODEL_IMAGE), ...(await Promise.all(garments.map((g) => inline(g.image))))];
+    parts = [
+      { text: prompt(garments, !!person) },
+      person ?? (await inline(MODEL_IMAGE)),
+      ...(await Promise.all(garments.map((g) => inline(g.image)))),
+    ];
   } catch {
     return Response.json({ error: "Store images are missing on the server. Run `npm run assets`." }, { status: 500 });
   }
@@ -72,7 +101,8 @@ export async function POST(req: Request) {
       headers: { "Content-Type": "application/json", "x-goog-api-key": key },
       body: JSON.stringify({
         contents: [{ role: "user", parts }],
-        generationConfig: { responseModalities: ["IMAGE"], imageConfig: { aspectRatio: "3:4" } },
+        // A customer photo keeps its own framing; the mannequin is always portrait.
+        generationConfig: { responseModalities: ["IMAGE"], ...(person ? {} : { imageConfig: { aspectRatio: "3:4" } }) },
       }),
       cache: "no-store",
     });

@@ -9,9 +9,10 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "assets": "node scripts/fetch-assets.mjs",
-    "postinstall": "node scripts/fetch-assets.mjs || true"
+    "postinstall": "node scripts/copy-mediapipe.mjs && (node scripts/fetch-assets.mjs || true)"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
     "@tabler/icons-react": "^3.48.0",
     "framer-motion": "^13.4.4",
     "next": "16.3.6",

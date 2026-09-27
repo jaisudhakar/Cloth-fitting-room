@@ -79,7 +79,6 @@ export function ProductDetail({ productId }: { productId: number }) {
   const cat = categoryById(p.categoryId);
   const name = t(p.name, lang);
   const colorLabel = p.colors.find((c) => c.value === color);
-  const shareUrl = typeof window === "undefined" ? "" : window.location.href;
 
   const addToCart = () => {
     add(p.id, { color, size, qty });
@@ -113,13 +112,20 @@ export function ProductDetail({ productId }: { productId: number }) {
               <div className="flex shrink-0 items-center gap-1.5 text-xs text-[var(--text-muted)]">
                 <span className="me-1 hidden sm:inline">{d.product.shareOn}</span>
                 {[
-                  { Icon: IconBrandFacebook, url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, label: "Facebook" },
-                  { Icon: IconBrandX, url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(name)}`, label: "X" },
-                  { Icon: IconBrandWhatsapp, url: `https://wa.me/?text=${encodeURIComponent(`${name} ${shareUrl}`)}`, label: "WhatsApp" },
+                  { Icon: IconBrandFacebook, label: "Facebook", url: (u: string) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(u)}` },
+                  { Icon: IconBrandX, label: "X", url: (u: string) => `https://twitter.com/intent/tweet?url=${encodeURIComponent(u)}&text=${encodeURIComponent(name)}` },
+                  { Icon: IconBrandWhatsapp, label: "WhatsApp", url: (u: string) => `https://wa.me/?text=${encodeURIComponent(`${name} ${u}`)}` },
                 ].map(({ Icon, url, label }) => (
-                  <a key={label} href={url} target="_blank" rel="noreferrer" aria-label={label} className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] text-[var(--text)] transition-colors hover:border-[var(--primaryColor)] hover:text-[var(--primaryColor)]">
+                  // The page URL is only known in the browser, so build the share link on click.
+                  <button
+                    key={label}
+                    type="button"
+                    onClick={() => window.open(url(window.location.href), "_blank", "noopener,noreferrer")}
+                    aria-label={label}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] text-[var(--text)] transition-colors hover:border-[var(--primaryColor)] hover:text-[var(--primaryColor)]"
+                  >
                     <Icon size={14} stroke={1.6} />
-                  </a>
+                  </button>
                 ))}
                 <button
                   onClick={() => {

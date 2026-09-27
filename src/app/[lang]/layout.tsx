@@ -36,7 +36,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen overflow-x-hidden font-sans">
+      {/* Extensions like Grammarly add attributes to <body> before hydration. */}
+      <body className="min-h-screen overflow-x-hidden font-sans" suppressHydrationWarning>
         <I18nProvider lang={lang} dict={d}>
           <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-white focus:p-4 focus:text-black">
             {d.skip}

@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --muted: #f3f0eb;
+  --line: #e7e2da;
+  --fg: #1c1b19;
+  --fg-muted: #6b665e;
+  --accent: #b4532a;
+  --accent-fg: #ffffff;
+  --primary: #1c1b19;
+  --primary-fg: #fbfaf8;
+  --success: #2f7d4f;
+  --danger: #b42318;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #121110;
+  --surface: #1b1a18;
+  --muted: #24221f;
+  --line: #34312c;
+  --fg: #f2efe9;
+  --fg-muted: #a39d93;
+  --accent: #e0864f;
+  --accent-fg: #121110;
+  --primary: #f2efe9;
+  --primary-fg: #121110;
+  --success: #5cc38a;
+  --danger: #f97066;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), Georgia, serif;
+}
+
+html:lang(ar) {
+  --font-body: var(--font-arabic);
+  --font-heading: var(--font-arabic);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 h-11 text-sm font-medium transition
+    disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+@utility btn-primary {
+  @apply btn bg-primary text-primary-fg hover:opacity-90;
+}
+@utility btn-accent {
+  @apply btn bg-accent text-accent-fg hover:opacity-90;
+}
+@utility btn-outline {
+  @apply btn border border-line bg-surface hover:border-fg;
+}
+@utility btn-ghost {
+  @apply btn hover:bg-muted;
+}
+@utility icon-btn {
+  @apply relative inline-flex size-10 items-center justify-center rounded-full hover:bg-muted transition
+    focus-visible:outline-2 focus-visible:outline-accent;
+}
+@utility input {
+  @apply h-11 w-full rounded-xl border border-line bg-surface px-3.5 text-sm outline-none transition
+    placeholder:text-fg-muted focus:border-fg aria-[invalid=true]:border-danger;
+}
+@utility chip {
+  @apply inline-flex h-9 items-center justify-center rounded-full border border-line px-3.5 text-sm transition
+    hover:border-fg aria-pressed:border-fg aria-pressed:bg-primary aria-pressed:text-primary-fg;
+}
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+@utility eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.18em] text-fg-muted;
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translate(-50%, 12px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-end {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-in-start {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.drawer-end { animation: slide-in-end 0.28s cubic-bezier(0.2, 0.8, 0.2, 1); }
+[dir="rtl"] .drawer-end { animation-name: slide-in-start; }
+.fade-in { animation: fade-in 0.2s ease-out; }
+.toast { animation: toast-in 0.25s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@keyframes fade-out-late {
+  0%, 80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+.fade-out-late { animation: fade-out-late 4s ease-in forwards; }
